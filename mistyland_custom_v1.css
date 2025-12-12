@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Display:wght@400;500;600&display=swap');
+
+/* базовый шрифт для виджета */
+.date-picker,
+.date-picker-wrapper {
+    font-family: 'Inter Display', Arial, sans-serif;
+}
+
+/* текст внутри календаря */
+.date-picker-wrapper table,
+.date-picker-wrapper th,
+.date-picker-wrapper td,
+.date-picker-wrapper .day,
+.date-picker-wrapper .week-name,
+.date-picker-wrapper .apply-btn {
+    font-family: 'Inter Display', Arial, sans-serif;
+}
