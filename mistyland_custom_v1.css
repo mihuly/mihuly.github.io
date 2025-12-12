@@ -1,3 +1,7 @@
+html {
+  outline: 10px solid red !important;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inter+Display:wght@400;500;600&display=swap');
 
 /* базовый шрифт для виджета */
