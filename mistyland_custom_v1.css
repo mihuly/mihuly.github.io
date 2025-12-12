@@ -26,6 +26,9 @@
    TYPOGRAPHY — FONT FAMILY ONLY
    No sizes, no colors, no geometry
 ====================================================== */
+body, input, select, textarea {
+    font-family: 'Inter Display', Arial, sans-serif !important;
+}
 
 /* Основные контейнеры */
 .date-picker,
@@ -53,6 +56,6 @@
 ====================================================== */
 /*
 body {
-  background: rgba(255, 0, 0, 0.02);
+  background: rgba(255, 0, 0, 0.5);
 }
 */
