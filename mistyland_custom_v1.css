@@ -1,4 +1,11 @@
-/* test: CSS реально загружается */
+/* === базовые стили виджета === */
+@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/common.css?v=7");
+@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/daterangepicker.css");
+@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/default.css");
+
+/* === ТЕСТ === */
 body {
   background: rgba(255, 0, 0, 0.02);
 }
+
+/* === ДАЛЬШЕ — ТОЛЬКО OVERRIDES === */
