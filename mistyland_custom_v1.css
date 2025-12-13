@@ -1,3 +1,12 @@
+
+
+/* ======================================================
+   ORIGINAL WIDGET STYLES
+====================================================== */
+@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/common.css?v=7");
+@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/daterangepicker.css");
+@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/default.css");
+
 /* ======================================================
    FONT (self-hosted)
 ====================================================== */
@@ -8,13 +17,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-/* ======================================================
-   ORIGINAL WIDGET STYLES
-====================================================== */
-@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/common.css?v=7");
-@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/daterangepicker.css");
-@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/default.css");
 
 /* ======================================================
    TYPOGRAPHY — TEXT ONLY (CRITICAL)
