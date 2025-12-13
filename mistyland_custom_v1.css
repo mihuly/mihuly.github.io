@@ -6,11 +6,15 @@
 
 
 /* ======================================================
-   GOOGLE FONT
+   FONT
 ====================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@8..144,100..900&display=swap');
-
-
+@font-face {
+  font-family: 'InterVariable';
+  src: url('https://cdn.jsdelivr.net/gh/mihuly/mihuly.github.io@705043181974ef0d6cda70bb0822c7ff2e2b956d/InterVariable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 /* ======================================================
    ORIGINAL WIDGET STYLES (BASE THEME)
    IMPORTANT:
@@ -27,13 +31,13 @@
    No sizes, no colors, no geometry
 ====================================================== */
 body, input, select, textarea {
-    font-family: 'Inter', Arial, sans-serif !important;
+    font-family: 'InterVariable', Arial, sans-serif !important;
 }
 
 /* Основные контейнеры */
 .date-picker,
 .date-picker-wrapper {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'InterVariable', Arial, sans-serif;
 }
 
 /* Табличные и текстовые элементы календаря */
@@ -46,7 +50,7 @@ body, input, select, textarea {
 .date-picker-wrapper .apply-btn,
 .date-picker-wrapper .error-top,
 .date-picker-wrapper .normal-top {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'InterVariable', Arial, sans-serif;
 }
 
 
