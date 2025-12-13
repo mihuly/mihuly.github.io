@@ -10,13 +10,6 @@
 /* ======================================================
    FONT (self-hosted)
 ====================================================== */
-@font-face {
-  font-family: 'InterVariable';
-  src: url('https://cdn.jsdelivr.net/gh/mihuly/mihuly.github.io@705043181974ef0d6cda70bb0822c7ff2e2b956d/InterVariable.ttf') format('truetype');
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
 
 /* ======================================================
    TYPOGRAPHY — TEXT ONLY (CRITICAL)
