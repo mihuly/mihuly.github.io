@@ -6,7 +6,7 @@
 
 
 /* ======================================================
-   FONT
+   FONT (self-hosted)
 ====================================================== */
 @font-face {
   font-family: 'InterVariable';
@@ -15,11 +15,10 @@
   font-style: normal;
   font-display: swap;
 }
+
+
 /* ======================================================
    ORIGINAL WIDGET STYLES (BASE THEME)
-   IMPORTANT:
-   widgetOptions.css полностью ЗАМЕНЯЕТ тему,
-   поэтому оригинальные стили нужно подключать вручную
 ====================================================== */
 @import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/common.css?v=7");
 @import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/daterangepicker.css");
@@ -27,31 +26,11 @@
 
 
 /* ======================================================
-   TYPOGRAPHY — FONT FAMILY ONLY
-   No sizes, no colors, no geometry
+   TYPOGRAPHY — FONT FAMILY ONLY (SAFE)
 ====================================================== */
-body, input, select, textarea {
-    font-family: 'InterVariable', Arial, sans-serif !important;
-}
 
-/* Основные контейнеры */
-.date-picker,
-.date-picker-wrapper {
+/* Корневой контейнер виджета */
+.search,
+.search * {
   font-family: 'InterVariable', Arial, sans-serif;
 }
-
-/* Табличные и текстовые элементы календаря */
-.date-picker-wrapper table,
-.date-picker-wrapper th,
-.date-picker-wrapper td,
-.date-picker-wrapper .day,
-.date-picker-wrapper .week-name,
-.date-picker-wrapper .caption,
-.date-picker-wrapper .apply-btn,
-.date-picker-wrapper .error-top,
-.date-picker-wrapper .normal-top {
-  font-family: 'InterVariable', Arial, sans-serif;
-}
-
-
-
