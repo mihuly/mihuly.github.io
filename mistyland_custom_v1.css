@@ -19,34 +19,3 @@
 /* ======================================================
    TYPOGRAPHY — TEXT ONLY (CRITICAL)
 ====================================================== */
-
-/* Заголовки номеров */
-.roomtype-info h2,
-.roomtype-info h3 {
-  font-family: 'InterVariable', Arial, sans-serif;
-}
-
-/* Описания */
-.roomtype-info .description,
-.roomtype-info p,
-.roomtype-info span {
-  font-family: 'InterVariable', Arial, sans-serif;
-}
-
-/* Цены */
-.roomtype-price,
-.roomtype-price .price,
-.roomtype-price span {
-  font-family: 'InterVariable', Arial, sans-serif;
-}
-
-/* Кнопки с ТЕКСТОМ (не иконки) */
-.work-button,
-.work-button span {
-  font-family: 'InterVariable', Arial, sans-serif;
-}
-
-/* Лейблы форм */
-.search-unit label {
-  font-family: 'InterVariable', Arial, sans-serif;
-}
