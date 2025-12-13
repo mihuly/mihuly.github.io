@@ -1,11 +1,4 @@
 /* ======================================================
-   MISTYLAND — BookingWidgetFront
-   Custom CSS (override theme)
-   Step 1: Font family only
-====================================================== */
-
-
-/* ======================================================
    FONT (self-hosted)
 ====================================================== */
 @font-face {
@@ -16,21 +9,44 @@
   font-display: swap;
 }
 
-
 /* ======================================================
-   ORIGINAL WIDGET STYLES (BASE THEME)
+   ORIGINAL WIDGET STYLES
 ====================================================== */
 @import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/common.css?v=7");
 @import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/daterangepicker.css");
 @import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/default.css");
 
-
 /* ======================================================
-   TYPOGRAPHY — FONT FAMILY ONLY (SAFE)
+   TYPOGRAPHY — TEXT ONLY (CRITICAL)
 ====================================================== */
 
-/* Корневой контейнер виджета */
-.search,
-.search * {
+/* Заголовки номеров */
+.roomtype-info h2,
+.roomtype-info h3 {
+  font-family: 'InterVariable', Arial, sans-serif;
+}
+
+/* Описания */
+.roomtype-info .description,
+.roomtype-info p,
+.roomtype-info span {
+  font-family: 'InterVariable', Arial, sans-serif;
+}
+
+/* Цены */
+.roomtype-price,
+.roomtype-price .price,
+.roomtype-price span {
+  font-family: 'InterVariable', Arial, sans-serif;
+}
+
+/* Кнопки с ТЕКСТОМ (не иконки) */
+.work-button,
+.work-button span {
+  font-family: 'InterVariable', Arial, sans-serif;
+}
+
+/* Лейблы форм */
+.search-unit label {
   font-family: 'InterVariable', Arial, sans-serif;
 }
