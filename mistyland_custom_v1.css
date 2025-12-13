@@ -1,16 +1,154 @@
+/* ======================================================
+   MISTYLAND — BookingWidgetFront
+   FINAL CONSOLIDATED CSS
+   Все оригинальные стили + локальные ассеты
+====================================================== */
 
 
 /* ======================================================
-   ORIGINAL WIDGET STYLES
+   1. BASE ORIGINAL STYLES (ОБЯЗАТЕЛЬНО ПЕРВЫМИ)
 ====================================================== */
+
 @import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/common.css?v=7");
 @import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/daterangepicker.css");
 @import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/default.css");
+@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/rooms.css?v=5");
+@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/jssort.css?v=5");
+@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/jquery-ui.css");
+
 
 /* ======================================================
-   FONT (self-hosted)
+   2. FONT — INTER VARIABLE (локально)
 ====================================================== */
 
+@font-face {
+    font-family: 'InterVariable';
+    src: url('./InterVariable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /* ======================================================
-   TYPOGRAPHY — TEXT ONLY (CRITICAL)
+   3. TYPOGRAPHY OVERRIDE (ТОЛЬКО ШРИФТ)
+   ⚠️ Никаких размеров / цветов / геометрии
+====================================================== */
+
+body,
+input,
+select,
+textarea,
+button,
+.ui-widget,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+    font-family: 'InterVariable', Arial, Helvetica, sans-serif !important;
+}
+
+
+/* ======================================================
+   4. ICONS & IMAGES (локальные файлы)
+====================================================== */
+
+/* календарь */
+.datepicker {
+    background-image: url('./calendar.png') !important;
+}
+
+/* select стрелка */
+select {
+    background-image: url('./down.png') !important;
+}
+
+/* rooms */
+.roomtype-info > .more {
+    background-image: url('./down.png');
+}
+
+.roomtype-info > .less {
+    background-image: url('./down.png');
+    transform: rotate(180deg);
+}
+
+/* рубль */
+#rubImg {
+    background-image: url('./rub.png');
+}
+
+#rubImg-small {
+    background-image: url('./rub.png');
+    background-size: contain;
+}
+
+/* ожидание */
+.wait {
+    background-image: url('./wait.gif');
+}
+
+/* jssor thumbnails */
+.jssort01 .c {
+    background-image: url('./t01.png');
+}
+
+/* jssor arrows */
+.jssora04l,
+.jssora04r {
+    background-image: url('./a04.png');
+}
+
+.jssora01l {
+    background-image: url('./prev.png');
+}
+
+.jssora01r {
+    background-image: url('./next.png');
+}
+
+
+/* ======================================================
+   5. jQuery UI ICON SPRITES (локально)
+====================================================== */
+
+.ui-widget-content .ui-icon,
+.ui-widget-header .ui-icon {
+    background-image: url('./ui-icons_444444_256x240.png');
+}
+
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+    background-image: url('./ui-icons_555555_256x240.png');
+}
+
+.ui-state-active .ui-icon {
+    background-image: url('./ui-icons_ffffff_256x240.png');
+}
+
+.ui-state-highlight .ui-icon {
+    background-image: url('./ui-icons_777777_256x240.png');
+}
+
+.ui-state-error .ui-icon {
+    background-image: url('./ui-icons_cc0000_256x240.png');
+}
+
+
+/* ======================================================
+   6. SAFE NORMALIZATION (НИЧЕГО НЕ ЛОМАЕТ)
+====================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ======================================================
+   END
 ====================================================== */
