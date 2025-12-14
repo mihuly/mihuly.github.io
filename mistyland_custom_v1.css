@@ -46,8 +46,9 @@ button,
 .ui-widget textarea,
 .ui-widget button {
     font-family: 'InterVariable', Arial, Helvetica, sans-serif !important;
+   letter-spacing: -0.01em;
+    font-feature-settings: "kern" 1, "liga" 1;
 }
-
 
 /* ======================================================
    4. ICONS & IMAGES (локальные файлы)
