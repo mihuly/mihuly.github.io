@@ -74,8 +74,17 @@ select {
 }
 
 /* рубль */
+
+.rate {
+    display: inline-flex;
+    align-items: center;
+    height: 1em; /* ← высота = высоте шрифта */
+}
+
 #rubImg {
-    background-image: url('./rub.png');
+    height: 1em;
+    width: 1em;
+    background: url('./rub.png') center / contain no-repeat;
 }
 
 #rubImg-small {
