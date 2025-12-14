@@ -56,7 +56,9 @@ button,
 .ui-widget-content {
     background: #F7F1DF;
 }
-
+.search {
+    background-color: transparent;
+}
 
 /* ======================================================
    4. ICONS & IMAGES (локальные файлы)
