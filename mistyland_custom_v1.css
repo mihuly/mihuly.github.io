@@ -49,12 +49,13 @@ button,
    letter-spacing: -0.01em;
     line-height: 1.1;
     font-feature-settings: "kern" 1, "liga" 1;
+   color: #4B463B;
 }
 /* ======================================================
    4. СOLORS
 ====================================================== */
 #search-widget-popup {
-    background: #F7F1DF;
+    background: #FDFBF1;
 }
 .search {
     background-color: transparent;
