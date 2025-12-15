@@ -51,6 +51,7 @@ html, body {
     display: inline-flex;
     align-items: center;
    border-color: transparent;
+   padding: 0;
 }
 .work-button:hover {
    opacity: 0.6;
