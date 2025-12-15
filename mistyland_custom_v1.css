@@ -43,6 +43,9 @@ html, body {
     background-color: transparent;
     width: 100%;
 }
+.search_unit > span:first-child {
+    display: none;
+}
 .work-button {
    pointer: auto;
    text-transform: none;
