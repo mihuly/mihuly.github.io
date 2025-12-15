@@ -27,44 +27,21 @@
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
-}
-
-
-/* ======================================================
-   3. TYPOGRAPHY OVERRIDE (ТОЛЬКО ШРИФТ)
-   ⚠️ Никаких размеров / цветов / геометрии
-====================================================== */
-
-body,
-input,
-select,
-textarea,
-button,
-.ui-widget,
-.ui-widget input,
-.ui-widget select,
-.ui-widget textarea,
-.ui-widget button {
-    font-family: 'InterVariable', Arial, Helvetica, sans-serif !important;
-   letter-spacing: -0.01em;
+     letter-spacing: -0.01em;
     line-height: 1.1;
-    font-feature-settings: "kern" 1, "liga" 1;
-   color: #4B463B !important;
+    color: #4B463B !important;
 }
+
+
+
 /* ======================================================
    4. СOLORS
 ====================================================== */
-#search-widget-popup {
-    background-color: #FDFBF1 !important;
-}
+
 .search {
     background-color: transparent;
 }
 
-#search-widget-popup a[title="Закрыть"] {
-    color: #1D2C2A !important;
-    cursor: pointer;
-}
 
 /* ======================================================
    4. ICONS & IMAGES (локальные файлы)
@@ -72,12 +49,12 @@ button,
 
 /* календарь */
 .datepicker {
-    background-image: url('./calendar.png') !important;
+    background-image: url('./calendar.png');
 }
 
 /* select стрелка */
 select {
-    background-image: url('./down.png') !important;
+    background-image: url('./down.png');
 }
 
 /* rooms */
@@ -173,41 +150,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-
-
-
-/* ======================================================
-   DESCRIPTION TEXT — BIGGER & AIRIER
-====================================================== */
-
-/* Основное описание номера / тарифа */
-.detail-description,
-.unit-description,
-.detail-unit .data-label {
-    font-size: 16px;
-    line-height: 1.45;
-    font-weight: 400;
-}
-
-/* Дополнительные тексты внутри деталей */
-.extraservices-detail {
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-/* Итоговые пояснения / финальный текст */
-.final-text-result {
-    font-size: 18px;
-    line-height: 1.45;
-}
-
-/* Мобильная адаптация */
-@media (max-width: 480px) {
-    .detail-description,
-    .unit-description,
-    .detail-unit .data-label {
-        font-size: 15px;
-    }
 
     .final-text-result {
         font-size: 16px;
