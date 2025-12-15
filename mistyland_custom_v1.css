@@ -79,6 +79,7 @@ input, select, textarea {
     width: 100%;
     box-sizing: border-box;
    background-size: auto 70%;
+   bacdround-position: right 12px center;
 }
 .datepicker {
    text-transform: none;
