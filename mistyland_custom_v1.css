@@ -89,7 +89,7 @@ input, select, textarea {
     border-width: thin;
     white-space: nowrap;
     min-height: 16px;
-    padding-left: 13px;
+    padding-left: 0px;
     padding-right: 13px;
     padding-top: 12px;
     padding-bottom: 10px;
