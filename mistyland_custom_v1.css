@@ -51,7 +51,7 @@ input, select, textarea {
 
 .search {
    width: 100vw !important;
-   background-color: #8db4d2 !important;
+   background-color: transparent !important;
    color: #4b463b;
 }
 
