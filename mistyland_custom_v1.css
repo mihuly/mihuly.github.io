@@ -52,7 +52,7 @@ input, select, textarea {
 .search {
    width: 100vw !important;
    background-color: #8db4d2 !important;
-   color: #4b463b !important;
+   color: #4b463b;
 }
 
 .search_unit > span:first-child {
@@ -69,6 +69,7 @@ input, select, textarea {
     border-color: transparent;
     border-style: solid;
     border-width: thin;
+    white-space: nowrap;
     min-height: 16px;
     padding-left: 13px;
     padding-right: 13px;
