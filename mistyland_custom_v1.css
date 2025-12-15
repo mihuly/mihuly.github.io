@@ -46,6 +46,14 @@ html, body {
 .search_unit > span:first-child {
     display: none;
 }
+
+#search-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 1em;
+  flex-wrap: nowrap;
+}
+
 .work-button {
    pointer: auto;
    text-transform: none;
