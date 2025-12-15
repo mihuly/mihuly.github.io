@@ -57,7 +57,7 @@ input, select, textarea {
    color: #4b463b;
    display: flex;
     flex-wrap: wrap;      /* ← ключевое */
-   flex-align: flex-end;
+   justify-content: flex-end;
     align-items: flex-end;    /* выравнивание по низу (кнопка и input) */
     gap: 12px;                /* расстояние между элементами */
 }
