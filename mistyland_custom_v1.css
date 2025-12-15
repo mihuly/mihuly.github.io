@@ -22,17 +22,15 @@
 ====================================================== */
 
 @font-face {
-    font-family: 'InterVariable';
-    src: url('./InterVariable.ttf') format('truetype');
-    font-weight: 100 900;
+    font-family: 'InterDisplay';
+    src: url('./InterDisplay-Medium.woff2') format('woff2');
+    font-weight: 100 900; /* ключевой момент */
     font-style: normal;
     font-display: swap;
-      letter-spacing: -0.01em;
+     letter-spacing: -0.01em;
     line-height: 1.1;
     color: #4B463B !important;
 }
-
-
 
 /* ======================================================
    4. SEARCH WIDGET
