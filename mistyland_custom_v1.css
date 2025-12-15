@@ -202,6 +202,100 @@ button,
     line-height: 1.2;
 }
 
+/* ======================================================
+   3.2 HERO SEARCH BAR — BOLD FIRST IMPRESSION
+   Увеличенные поля, карточный фон, адаптивная сетка
+====================================================== */
+
+#search-widget {
+    padding: clamp(10px, 1.6vw, 18px);
+}
+
+#search-widget .search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(10px, 1.4vw, 18px);
+    align-items: flex-end;
+    background: radial-gradient(circle at 14% 10%, rgba(255, 255, 250, 0.9), rgba(249, 244, 229, 0.92));
+    border: 1px solid rgba(169, 158, 136, 0.6);
+    border-radius: 20px;
+    box-shadow: 0 14px 36px rgba(34, 32, 27, 0.08);
+    padding: clamp(14px, 2vw + 10px, 22px);
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+#search-widget .search_unit {
+    flex: 1 1 240px;
+    min-width: 200px;
+    padding: 6px 6px 0 6px;
+}
+
+#search-widget .search_unit > span:first-child {
+    font-size: clamp(15px, 1vw + 12px, 17px);
+    text-transform: none;
+    font-weight: 650;
+    letter-spacing: -0.015em;
+    color: #3E3A32;
+    margin-bottom: 10px;
+}
+
+#search-widget .search_unit > input,
+#search-widget .search select {
+    width: 100%;
+    font-size: clamp(16px, 0.4vw + 15px, 18px);
+    font-weight: 620;
+    border-radius: 14px;
+    padding: clamp(12px, 0.8vw + 10px, 16px) clamp(14px, 1vw + 12px, 18px);
+    border: 1px solid rgba(169, 158, 136, 0.7);
+    background-color: #FFFEFA;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+}
+
+#search-widget .search .search-btn {
+    font-size: clamp(17px, 0.8vw + 14px, 19px);
+    padding: clamp(12px, 1vw + 10px, 16px) clamp(20px, 1.4vw + 16px, 26px);
+    min-height: clamp(54px, 2.5vw + 44px, 62px);
+    border-radius: 999px;
+    align-self: stretch;
+    justify-content: center;
+}
+
+.search .title {
+    flex: 1 1 100%;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+    #search-widget .search {
+        padding: clamp(16px, 2.6vw, 22px);
+        gap: clamp(12px, 2vw, 18px);
+    }
+
+    #search-widget .search_unit {
+        flex: 1 1 260px;
+        min-width: 220px;
+    }
+}
+
+@media (max-width: 640px) {
+    #search-widget .search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #search-widget .search_unit {
+        width: 100%;
+        min-width: 100%;
+        padding: 4px 0 0 0;
+    }
+
+    #search-widget .search .search-btn {
+        width: 100%;
+        margin-top: 8px;
+    }
+}
+
 #search-widget .search input,
 #search-widget .search select {
     min-height: 3.2rem;
