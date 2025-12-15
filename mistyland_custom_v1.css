@@ -9,12 +9,12 @@
    1. BASE ORIGINAL STYLES (ОБЯЗАТЕЛЬНО ПЕРВЫМИ)
 ====================================================== */
 
-@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/common.css?v=7");
-@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/daterangepicker.css");
-@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/default.css");
-@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/rooms.css?v=5");
-@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/jssort.css?v=5");
-@import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/jquery-ui.css");
+@import url("./styles/common.css");
+@import url("./styles/daterangepicker.css");
+@import url("./styles/default.css");
+@import url("./styles/rooms.css");
+@import url("./styles/jssort.css");
+@import url("./styles/jquery-ui.css");
 
 
 /* ======================================================
