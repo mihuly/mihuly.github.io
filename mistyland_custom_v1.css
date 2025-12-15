@@ -41,6 +41,14 @@
 /* ======================================================
    SEARCH WIDGET
 ====================================================== */
+body {
+    font-family: 'InterDisplay', Arial, sans-serif;
+}
+
+input, select, textarea {
+     font-family: 'InterDisplayReg', Arial, sans-serif;
+}
+
 .search {
    width: 100vw;
 }
