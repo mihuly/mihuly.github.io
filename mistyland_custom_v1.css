@@ -115,6 +115,16 @@ input, select, textarea {
        opacity:0.6;
     }
 
+/* ======================================================
+  DATEPICKER
+====================================================== */
+
+
+.date-picker-wrapper .month-wrapper {
+    color: #4b463b;
+    background-color: #fdfbf1 !important;
+}
+
 
 /* ======================================================
    4. ICONS & IMAGES (локальные файлы)
