@@ -1,0 +1,144 @@
+﻿
+.roomtype {
+    min-height: 270px;
+    position: relative;
+}
+
+    .roomtype .empty {
+        min-height: 0px !important;
+    }
+
+    .roomtype .one {
+        min-height: 100px !important;
+    }
+
+        .roomtype .one .jssort01 {
+            display: none;
+        }
+
+.roomtype-pictures {
+    display: inline-block;
+    width: 260px;
+    min-height: 260px;
+    position: absolute;
+}
+
+.roomtype-info {
+    display: inline-block;
+    position: absolute;
+    left: 260px;
+    right: 160px;
+}
+
+    .roomtype-info .description {
+        display: block;
+        overflow: hidden;
+        line-height: 20px;
+    }
+
+    .roomtype-info > .more,
+    .roomtype-info > .less {
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .roomtype-info > .more {
+        background-image: url(../img/down.png);
+    }
+
+    .roomtype-info > .less {
+        background-image: url(../img/up.png);
+    }
+
+.roomtype-price {
+    display: inline-block;
+    position: absolute;
+    width: 142px;
+    right: 0;
+    z-index: 1;
+}
+
+    .roomtype-price .price-from {
+        display: inline-block;
+    }
+
+#rubImg {
+    background-image: url(../img/rub.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 14px;
+    height: 18px;
+    margin-left: 3px;
+    display: inline-block;
+}
+
+#rubImg-small {
+    background-image: url(../img/rub-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 7px;
+    height: 9px;
+    margin-left: 3px;
+    display: inline-block;
+}
+
+/* Варианты */
+
+.boarding-variants {
+    display: none;
+    position: absolute;
+    left: 270px;
+}
+
+.tariff-variant {
+    display: inline-block;
+    width: 100%;
+}
+
+    .tariff-variant > .tariff-info {
+        right: 260px;
+        position: absolute;
+    }
+
+        .tariff-variant > .tariff-info.single {
+            right: 170px !important;
+            position: absolute;
+        }
+
+        .tariff-variant > .tariff-info > .tariff-name {
+            display: block;
+        }
+
+    .tariff-variant > .tariff-price,
+    .tariff-variant > .tariff-price-button {
+        float: right;
+    }
+
+        .tariff-variant > .tariff-price > .price,
+        .tariff-variant > .tariff-price > .rate {
+            display: inline-block;
+        }
+
+@media only screen and (max-width: 740px) {
+    .roomtype-pictures,
+    .roomtype-info,
+    .roomtype-price {
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+        display: block;
+    }
+
+    .boarding-variants,
+    .tariff-variant > .tariff-info {
+        position: relative !important;
+        right: 0;
+        left: 0;
+    }
+
+        .tariff-variant > .tariff-info > .tariff-name {
+            text-align: left;
+        }
+}

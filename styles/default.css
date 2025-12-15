@@ -1,0 +1,1134 @@
+﻿body {
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+input, select, textarea {
+    font-family: Arial, Ubuntu, sans-serif;
+    outline: none
+}
+
+    input::-ms-clear /* for IE 11 */ {
+        display: none;
+    }
+
+    select::-ms-expand /* for IE 11 */ {
+        display: none;
+    }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-width: 52px;
+    background-image: url(../img/down.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 40px;
+    padding-left: 5px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #B8C4CC;
+    padding-right: 23px;
+}
+
+    select option {
+        padding: 2px 2px;
+    }
+
+/* ---------------------------
+            1. search 
+-------------------------------*/
+
+.search {
+    background-color: #EEF5F7;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #32373B;
+}
+
+.search_unit {
+    display: inline-block;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: top;
+}
+
+    .search_unit > span:first-child {
+        display: block;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: bolder;
+        font-stretch: ultra-condensed;
+        letter-spacing: -0.3px;
+        padding-bottom: 8px;
+    }
+
+    .search_unit > input {
+        border-color: #B8C4CC;
+        border-style: solid;
+        border-width: thin;
+        height: 36px;
+        padding-left: 13px;
+        letter-spacing: 0px;
+        font-size: 15px;
+        font-weight: bold;
+        font-stretch: condensed;
+    }
+
+    .search_unit > #bronhotel {
+        padding-left: 13px;
+        letter-spacing: 0px;
+        font-size: 15px;
+        font-weight: bold;
+        font-stretch: condensed;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+        .search_unit > #bronhotel > option {
+            font-stretch: condensed;
+            text-transform: uppercase;
+        }
+
+.datepicker {
+    background-image: url(../img/calendar.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 30px;
+    min-width: 70px;
+    text-transform: uppercase;
+}
+
+.work-button {
+    background-color: White;
+    cursor: pointer;
+    border-color: #B8C4CC;
+    border-style: solid;
+    border-width: thin;
+    min-height: 16px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-stretch: condensed;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+    text-align: center;
+}
+
+    .work-button:hover {
+        border-color: #81A9E4;
+    }
+
+.age-selector {
+    margin-right: 1px;
+    width: 58px;
+}
+
+    .age-selector[disabled] {
+        color: Transparent;
+        background: none;
+    }
+
+#filter-tariff,
+#filter-room {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    color: #606060;
+}
+
+    #filter-tariff span,
+    #filter-room span {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #filter-tariff a:visited,
+    #filter-tariff a,
+    #filter-room a:visited,
+    #filter-room a {
+        color: #33aaff;
+    }
+
+.placeHolderMode {
+    text-transform: none;
+    font-weight: normal;
+}
+
+#bronperiod {
+    min-width: 90px;
+}
+
+/*  calendar */
+.date-picker-wrapper .month-wrapper {
+    color: White;
+    background-color: transparent !important;
+}
+
+.month-name {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: condensed;
+    letter-spacing: -1px;
+}
+
+.week-name {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: condensed;
+    letter-spacing: -1px;
+}
+
+.date-picker-wrapper .month-wrapper table .day {
+    color: White !important;
+    font-size: 15px !important;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-family: Helvetica;
+    letter-spacing: -1px;
+}
+
+.date-picker-wrapper .month-wrapper table td {
+    padding: 0px !important;
+    height: 28px;
+    width: 33px;
+}
+
+.date-picker-wrapper .month-wrapper .caption th {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.date-picker-wrapper .month-wrapper .week-name th {
+    padding-top: 15px !important;
+    padding-bottom: 10px !important;
+}
+
+.date-picker-wrapper .month-wrapper table div.day.nextMonth,
+.date-picker-wrapper .month-wrapper table div.day.lastMonth {
+    color: #999 !important;
+}
+
+.date-picker-wrapper .month-wrapper table div.day.invalid {
+    color: #555555 !important;
+}
+
+.date-picker-wrapper .month-wrapper table div.day.real-today:not(.checked) {
+    background-color: #96B6CC;
+    color: Black !important;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    padding-top: 4px;
+    height: 24px;
+    width: 30px;
+    margin-left: 3px;
+}
+
+.date-picker-wrapper:not(.single-date) {
+    width: 580px !important;
+}
+
+.date-picker-wrapper.single-date {
+    width: 300px !important;
+}
+
+.date-picker-wrapper .month-wrapper table.month2,
+.date-picker-wrapper .month-wrapper table.month1 {
+    width: 231px !important;
+}
+
+.date-picker-wrapper .gap {
+    left: 272px !important;
+}
+
+.date-picker-wrapper .month-wrapper {
+    padding-left: 27px !important;
+    padding-right: 27px !important;
+    padding-bottom: 22px !important;
+    border: none !important;
+}
+
+    .date-picker-wrapper .month-wrapper table div.day.checked {
+        background-color: #2C71A1 !important;
+        width: 100%;
+        margin: 0px;
+        margin-left: 0px;
+        padding-top: 4px;
+        margin-top: 1px;
+        height: 22px;
+    }
+
+
+    .date-picker-wrapper .month-wrapper table div.day.start,
+    .date-picker-wrapper .month-wrapper table tr td:first-child div.day.checked {
+        -webkit-border-top-left-radius: 25px;
+        -webkit-border-bottom-left-radius: 25px;
+        -moz-border-radius-topleft: 25px;
+        -moz-border-radius-bottomleft: 25px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        margin-left: 3px;
+    }
+
+    .date-picker-wrapper .month-wrapper table div.day.end,
+    .date-picker-wrapper .month-wrapper table tr td:last-child div.day.checked {
+        -webkit-border-top-right-radius: 25px;
+        -webkit-border-bottom-right-radius: 25px;
+        -moz-border-radius-topright: 25px;
+        -moz-border-radius-bottomright: 26px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+.date-picker-wrapper.single-date .month-wrapper table div.day.start,
+.date-picker-wrapper.single-date .month-wrapper table tr td:first-child div.day.checked {
+    -webkit-border-top-right-radius: 25px;
+    -webkit-border-bottom-right-radius: 25px;
+    -moz-border-radius-topright: 25px;
+    -moz-border-radius-bottomright: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-left: 3px;
+}
+
+.date-picker-wrapper.single-date .month-wrapper table div.day.end,
+.date-picker-wrapper.single-date .month-wrapper table tr td:last-child div.day.checked {
+    -webkit-border-top-left-radius: 25px;
+    -webkit-border-bottom-teft-radius: 25px;
+    -moz-border-radius-topleft: 25px;
+    -moz-border-radius-bottomleft: 26px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.date-picker-wrapper .drp_top-bar.normal .normal-top {
+    display: none !important;
+    color: transparent;
+}
+
+.date-picker-wrapper table .caption .next,
+.date-picker-wrapper table .caption .prev {
+    padding: 9px 16px !important;
+    background-color: #575757;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+
+.date-picker-wrapper table .caption .next {
+    background-image: url(../img/next.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.date-picker-wrapper table .caption .prev {
+    background-image: url(../img/prev.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.date-picker-wrapper table .caption .invalid {
+    display: none;
+}
+
+.date-picker-wrapper .drp_top-bar {
+    position: absolute !important;
+    background-color: black !important;
+    top: 0px;
+    left: 0px;
+    width: 580px;
+    height: 290px !important;
+    opacity: 0.77;
+}
+
+.search.with-time .date-picker-wrapper .drp_top-bar {
+    height: 340px !important;
+}
+
+.date-picker-wrapper.single-date .drp_top-bar {
+    width: 300px;
+}
+
+.date-picker-wrapper .time {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+    .date-picker-wrapper .time .minute {
+        display: none;
+    }
+
+    .date-picker-wrapper .time .time1 {
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    .date-picker-wrapper .time .time2 {
+        float: right;
+        margin-right: 88px;
+    }
+
+@media only screen and (max-width: 620px) {
+    .date-picker-wrapper .drp_top-bar {
+        height: 530px !important;
+        width: 240px;
+    }
+
+    .month-wrapper table.month1 {
+        display: block;
+    }
+
+    .date-picker-wrapper .month-wrapper table {
+        float: none;
+        width: 230px !important;
+    }
+
+    .date-picker-wrapper {
+        width: 280px !important;
+        margin-left: 30px;
+    }
+
+        .date-picker-wrapper .month-wrapper {
+            padding-left: 0px !important;
+        }
+
+            .date-picker-wrapper .month-wrapper table.month2 {
+                float: left;
+            }
+}
+
+
+/* ---------------------------
+            2. rooms 
+-------------------------------*/
+
+.roomtype {
+    border-width: thin;
+    border-bottom-style: solid;
+    border-color: #C6CACC;
+}
+
+.roomtype-pictures {
+    padding-top: 15px;
+}
+
+.roomtype-info {
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.roomtype-price {
+    vertical-align: top;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+    .roomtype-price .price {
+        font-stretch: ultra-condensed;
+        letter-spacing: -0.3px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .roomtype-price .selected-count {
+        font-stretch: ultra-condensed;
+        letter-spacing: -0.3px;
+        font-size: 28px;
+        font-weight: bold;
+        display: block;
+    }
+
+    .roomtype-price .rate {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+        .roomtype-price .rate img {
+            vertical-align: baseline;
+        }
+
+    .roomtype-price .price {
+        font-stretch: ultra-condensed;
+        letter-spacing: -0.3px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+.room-button,
+.variants-button {
+    background-color: White;
+    cursor: pointer;
+    border-color: #B8C4CC;
+    border-style: solid;
+    border-width: thin;
+    min-height: 16px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-stretch: condensed;
+    letter-spacing: -0.3px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.roomtype-price .room-button,
+.variants-button {
+    margin-top: 20px;
+}
+
+    .variants-button:hover,
+    .room-button:hover {
+        border-color: #81A9E4;
+        border-style: solid;
+        border-width: thin;
+    }
+
+.space {
+    margin-left: 6px;
+}
+
+.wait {
+    background-image: url(../img/wait.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 30px;
+}
+
+.roomtype-price > .rooms-count {
+    margin-left: 5px;
+    margin-top: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+/* Итого выбрано */
+
+#total-container {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 9px;
+    padding-top: 27px;
+    padding-bottom: 12px;
+}
+
+#total-text {
+    display: inline-block;
+}
+
+    #total-text > label {
+        font-stretch: ultra-condensed;
+        letter-spacing: -0.3px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    #total-text > .price-and-rate {
+        display: inline-block;
+    }
+
+        #total-text > .price-and-rate > .rate {
+            font-size: 20px;
+            font-weight: bold;
+            padding-right: 15px;
+        }
+
+            #total-text > .price-and-rate > .rate img {
+                vertical-align: baseline;
+            }
+
+        #total-text > .price-and-rate > .price {
+            font-stretch: ultra-condensed;
+            letter-spacing: -0.3px;
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 15px;
+            margin-right: 3px;
+        }
+
+#total-container > .room-button,
+.roomtype .room-button {
+    display: inline-block;
+}
+
+.disabled-button {
+    background-color: #F0F0F0;
+}
+
+    .disabled-button:hover {
+        border-color: #B8C4CC !important;
+        border-style: solid;
+        border-width: thin;
+    }
+
+
+@media only screen and (max-width: 837px) {
+    #total-container {
+        float: inherit;
+        padding-left: 9px;
+        padding-top: 9px;
+        display: block;
+    }
+
+    #total-text {
+        min-width: 300px;
+    }
+}
+
+
+@media only screen and (max-width: 502px) {
+    #total-text {
+        min-width: inherit;
+        margin-bottom: 26px;
+    }
+
+    #total-container > .room-button {
+        width: inherit;
+    }
+
+    .ui-tooltip {
+        min-width: calc(100% - 150px);
+    }
+}
+
+
+/* Варианты */
+
+.boarding-variant > .boarding-name {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.tariff-variant {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.selected {
+    margin-top: 20px;
+}
+
+.tariff-variant > .tariff-info {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+    .tariff-variant > .tariff-info > .tariff-name {
+        font-size: 18px;
+        margin-bottom: 5px;
+        text-align: right;
+        padding-top: 10px;
+    }
+
+    .tariff-variant > .tariff-info > .tariff-decription {
+        font-size: 12px;
+        color: gray;
+    }
+
+.tariff-variant > .tariff-price,
+.tariff-variant > .tariff-price-button {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.tariff-variant > .tariff-price-button {
+    width: 140px;
+}
+
+.tariff-variant > .tariff-price {
+    text-align: right;
+}
+
+
+    .tariff-variant > .tariff-price .rate {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 3px;
+    }
+
+        .tariff-variant > .tariff-price .rate img {
+            vertical-align: top;
+        }
+
+    .tariff-variant > .tariff-price .price {
+        font-stretch: ultra-condensed;
+        letter-spacing: -0.3px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .tariff-variant > .tariff-price .month-price,
+    .tariff-variant > .tariff-price .month-rate,
+    .roomtype-price .month-rate {
+        font-size: 13px;
+        font-stretch: condensed;
+    }
+
+    .tariff-variant > .tariff-price .month-price,
+    .roomtype-price .month-price {
+        font-size: 18px;
+        font-weight: bold;
+        padding-right: 3px;
+        font-stretch: condensed;        
+    }
+
+.month-price-block {
+    cursor: pointer;
+}
+
+    .roomtype-price .price-or,
+    .tariff-variant > .tariff-price .price-or {
+        font-size: 14px;
+        display: block;
+        line-height: 4px;
+        padding-bottom: 8px;
+        padding-top: 3px;
+        color: #888;
+    }
+
+        .roomtype-price .price-or:after {
+            content: '';
+            border-top-style: solid;
+            border-color: #C6CACC;
+            width: 90px;
+            border-top-width: thin;
+            margin-left: 5px;
+            margin-top: 3px;
+            position: absolute;
+        }
+
+.month-price-block .price-from {
+    padding-right: 3px;
+}
+
+#room .price-from {
+    display: none;
+}
+
+.month-price-descr {
+    display: none;
+}
+
+    .roomtype-price .month-price-descr > span:first-child {
+        display: block;
+        font-weight: bold;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding-top: 5px;
+    }
+
+    .roomtype-price .month-price-descr > span:last-child {
+        font-size: 13px;
+        font-stretch: condensed;
+        padding-bottom: 5px;
+        display: block;
+    }
+
+#room .roomtype-price .month-price-descr {
+    display: inherit;
+}
+
+.month-price .space {
+    margin-left: 4px;
+}
+
+.ui-tooltip {
+    background-color: #FFE58F;
+    min-width: 600px;
+}
+
+/* Альтернативы */
+.not-exists,
+#alternatives {
+    margin-top: 15px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+    #alternatives > span,
+    #alternatives > div {
+        margin-top: 15px;
+    }
+
+    #alternatives a,
+    #alternatives a:visited {
+        color: #33aaff;
+    }
+
+
+/* Блок поиска */
+
+#searches {
+    border-bottom-style: solid;
+    border-color: #C6CACC;
+    border-width: thin;
+    padding-bottom: 15px;
+}
+
+.nodates {
+    border-bottom-style: none !important;
+}
+
+/* ---------------------------
+            3. room 
+-------------------------------*/
+
+.order .order-detail:first-child {
+    margin-top: 0px;
+}
+
+.order .order-detail {
+    margin-top: 30px;
+}
+
+#search-params {
+    border-bottom-style: solid;
+    border-color: #C6CACC;
+    border-width: thin;
+    padding-bottom: 5px;
+}
+
+.redalert {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: Red;
+}
+
+.text-result {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(52, 152, 219);
+    margin-top: 20px;
+    max-width: 495px;
+}
+
+#result > a {
+    font-size: 14px;
+}
+
+#result > br {
+    line-height: 38px;
+}
+
+#result > a,
+#result > a:link,
+#result > a:visited {
+    font-size: 14px;
+    color: #999;
+}
+
+#room .jssort01 {
+    display: none;
+}
+
+#room > .roomtype {
+    border-bottom-style: none !important;
+    background-color: #EEF5F7 !important;
+    padding-left: 20px !important;
+}
+
+    #room > .roomtype:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    #room > .roomtype > .roomtype-pictures,
+    #room > .roomtype > .roomtype-info {
+        padding-right: 40px;
+    }
+
+
+    #room > .roomtype > .roomtype-pictures {
+        min-height: initial !important;
+    }
+
+.promocodeBlock {
+    margin-left: -10px;
+}
+
+.promocode {
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.promocodeButton {
+    width: 70px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 7px;
+    display: inline-block;
+}
+
+.detail-unit {
+    display: inline-block;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: top;
+}
+
+    .detail-unit > span:first-child {
+        display: block;
+        padding-bottom: 8px;
+    }
+
+    .detail-unit > span {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: bolder;
+        font-stretch: ultra-condensed;
+        letter-spacing: -0.3px;
+    }
+
+    .detail-unit > .data-label {
+        margin-bottom: 12px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-stretch: ultra-condensed;
+        letter-spacing: -0.3px;
+        max-width: 205px;
+    }
+
+        .detail-unit > .data-label > img {
+            margin-left: 3px;
+        }
+
+    .detail-unit > input,
+    .detail-unit > textarea {
+        border-color: #B8C4CC;
+        border-style: solid;
+        border-width: thin;
+        letter-spacing: 0px;
+        font-size: 15px;
+        font-weight: bold;
+        font-stretch: condensed;
+        padding-left: 13px;
+        padding-right: 13px;
+        margin-bottom: 7px;
+    }
+
+    .detail-unit > textarea {
+        padding-top: 9px;
+    }
+
+    .detail-unit > input {
+        height: 35px;
+    }
+
+.price-detail {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-bottom-style: solid;
+    border-color: #C6CACC;
+    border-width: thin;
+}
+
+    .price-detail .price-or {
+        font-size: 14px;
+        display: block;
+        line-height: 4px;
+        padding-bottom: 15px;
+        color: #888;
+    }
+        .price-detail .price-or:after {
+            content: '';
+            border-top-style: solid;
+            border-color: #C6CACC;
+            width: 575px;
+            border-top-width: thin;
+            margin-left: 5px;
+            margin-top: 3px;
+            position: absolute;
+        }
+
+    .price-detail .price-detail-row {
+        display: flex;
+    }
+
+        .price-detail .price-detail-row > span:first-child {
+            width: 100px;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: bolder;
+            font-stretch: ultra-condensed;
+            letter-spacing: -0.3px;
+        }
+
+        .price-detail .price-detail-row > span:nth-child(2) {
+            margin-bottom: 12px;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-stretch: ultra-condensed;
+            letter-spacing: -0.3px;
+            padding-right: 25px;
+        }
+
+        .price-detail .price-detail-row .price-detail-price {
+            display: inline-block;
+        }
+
+.monthprice-mark {
+    background-image: url(../img/econom-img.png);
+    background-image: url(../img/econom-img.png);
+    width: 245px;
+    background-repeat: no-repeat;
+    height: 38px;
+}
+
+#guestName {
+    width: 380px;
+}
+
+#guestSurname,
+#guestFirstName,
+#email,
+#phone {
+    width: 165px;
+}
+
+#comment {
+    resize: none;
+    width: 380px;
+    height: 54px;
+}
+
+#buttonBook {
+    width: 167px;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: normal;
+}
+
+.blueButton {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+}
+
+    .blueButton:not([disabled]):hover {
+        background: #3cb0fd;
+        background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+        background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    }
+
+
+#pay > span {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#cardNum {
+    width: 121px;
+}
+
+#cardMonth,
+#cardYear {
+    width: 16px;
+}
+
+#cardHolder {
+    width: 310px;
+    text-transform: uppercase;
+}
+
+.slash:after {
+    content: '/';
+}
+
+.detail-unit .slash {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0;
+}
+
+.widgetLink {
+    color: #3498db;
+    cursor: pointer;
+    min-height: 32px;
+    display: inline-block;
+    padding-left: 5px;
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 17px;
+    font-weight: bolder;
+    font-stretch: ultra-condensed;
+}
+
+.promoLink {
+    min-height: inherit;
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+#contact-data.withCond #buttonBook {
+    margin-top: 15px;
+}
+
+label > input[type=checkbox] {
+    vertical-align: top;
+}
+
+
+@media only screen and (max-width: 641px) {
+    #cardNum {
+        width: 168px;
+    }
+
+    #cardMonth,
+    #cardYear {
+        width: 62px;
+    }
+
+    #cardHolder {
+        width: 380px;
+    }
+
+    #buttonBook {
+        margin-top: 0px;
+        display: block;
+    }
+
+    .price-detail .price-or:after {
+        width: calc(100% - 60px);
+    }
+
+    .monthprice-mark {
+        display:none
+    }
+}

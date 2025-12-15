@@ -1,0 +1,136 @@
+﻿
+
+#paybutton
+{
+    width: 168px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: normal;
+}
+
+#pay > span 
+{
+    float: none !important;
+    text-transform: none !important;
+	display: block;
+} 
+
+#bronperiod 
+{
+    width: 260px;
+}
+
+.detail-guest {
+	float: left;
+	margin-right: 25px;
+}
+.guest-name
+{
+	width: 300px;
+}
+.guest-doc
+{
+	width: 80px;
+}
+.guest-birthday
+{
+	width: 70px;
+}
+.guest-email
+{
+	width: 160px;
+}
+.guest-phone
+{
+	width: 100px;
+}
+
+#question-comment {
+    resize: none;
+    width: 550px;
+    height: 54px;
+
+}
+
+.detail-header
+{
+    margin-bottom: 0px;
+    font-size: 15px;
+    text-transform: uppercase;  
+   
+    font-weight: bolder;
+    font-stretch: ultra-condensed;
+    letter-spacing: -0.3px;
+}
+
+.detail-guest-next
+{
+    display: none;
+}
+
+#condPersonalData 
+{
+    height: auto;
+    margin: 0;
+}
+
+
+#personalDataUnit 
+{
+	width: 408px;
+}
+
+#personalDataUnit > div > span
+{
+	font-size: 12px;
+	color: gray;
+}
+
+.strickout 
+{
+    text-decoration-line: line-through;
+}
+
+.promocodeBlock 
+{
+	padding-right: 0px !important;
+}
+
+.promocode 
+{
+	width: 70px;
+	height: 30px;	
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.promocodeButton
+{
+	width: 70px;
+    
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: 7px;
+    display: inline-block;
+} 
+
+.promoLink
+{
+	font-size: 13px;
+	display: inline-block;
+}
+
+#pay .panel
+{
+    min-height: 480px;
+}
+
+#paybutton100, #paybutton20, #paybutton20 + #paybutton {
+    width: 200px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: normal;
+    margin-right: 20px;
+}
