@@ -31,6 +31,9 @@
     line-height: 1.1;
     color: #4B463B !important;
 }
+html, body {
+    font-family: 'InterDisplay', Arial, sans-serif;
+}
 
 /* ======================================================
    4. SEARCH WIDGET
