@@ -35,11 +35,17 @@
 
 
 /* ======================================================
-   4. СOLORS
+   4. SEARCH WIDGET
 ====================================================== */
 
 .search {
     background-color: transparent;
+    width: 100%;
+}
+.work-button {
+   pointer: auto;
+   text-transform: none;
+   font-size: 1em;
 }
 
 
