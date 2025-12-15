@@ -76,6 +76,10 @@ input, select, textarea {
     width: 100%;
     box-sizing: border-box;
 }
+.datepicker {
+   text-transform: none;
+}
+
 
 .work-button {
     background-color: transparent;
