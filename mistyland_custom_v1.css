@@ -52,6 +52,7 @@ input, select, textarea {
 .search {
    width: 100vw !important;
    backgound-color: #8db4d2 !important;
+   color: #4b463b;
 }
 
 .search_unit > span:first-child {
