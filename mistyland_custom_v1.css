@@ -55,7 +55,7 @@ button,
    4. СOLORS
 ====================================================== */
 #search-widget-popup {
-    background: #FDFBF1 !important;
+    background-color: #FDFBF1;
 }
 .search {
     background-color: transparent;
