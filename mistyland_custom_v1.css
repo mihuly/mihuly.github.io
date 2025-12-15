@@ -55,14 +55,14 @@ button,
    4. СOLORS
 ====================================================== */
 #search-widget-popup {
-    background-color: #FDFBF1;
+    background-color: #FDFBF1 !important;
 }
 .search {
     background-color: transparent;
 }
 
 #search-widget-popup a[title="Закрыть"] {
-    color: #1D2C2A;
+    color: #1D2C2A !important;
     cursor: pointer;
 }
 
