@@ -137,6 +137,11 @@ input, select, textarea {
         height: 22px;
 }
 
+.date-picker-wrapper .month-wrapper table div.day.invalid {
+    color: #5555555c !important;
+}
+
+
 .date-picker-wrapper .month-wrapper table div.day.real-today:not(.checked) {
     background-color: #FF895C;
     color: #F7F1DF !important;
