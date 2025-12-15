@@ -201,6 +201,86 @@ button,
 }
 
 /* ======================================================
+   4.1 CTA & MODAL REFINEMENTS
+   Мягкие фоны, тени, ховеры, адаптивные отступы
+====================================================== */
+
+.btn,
+.search-btn,
+.apply-btn {
+    background: linear-gradient(135deg, rgba(255, 255, 250, 0.92), rgba(248, 245, 233, 0.96));
+    color: #2D302C !important;
+    border: 1px solid rgba(164, 152, 128, 0.5);
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(34, 32, 27, 0.08), 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    padding: clamp(0.65rem, 1vw + 0.4rem, 0.9rem) clamp(1.05rem, 1.4vw + 0.4rem, 1.45rem);
+    font-weight: 650;
+    letter-spacing: -0.01em;
+    transition: background 160ms ease, box-shadow 160ms ease, border-color 160ms ease, transform 160ms ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn:hover,
+.search-btn:hover,
+.apply-btn:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 247, 0.98), rgba(244, 238, 224, 0.98));
+    border-color: rgba(150, 136, 110, 0.55);
+    box-shadow: 0 10px 24px rgba(34, 32, 27, 0.12), 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+    transform: translateY(-1px);
+}
+
+.btn:focus,
+.search-btn:focus,
+.apply-btn:focus {
+    outline: none;
+    border-color: rgba(129, 117, 96, 0.65);
+    box-shadow: 0 0 0 3px rgba(201, 189, 160, 0.35), 0 10px 22px rgba(34, 32, 27, 0.1);
+}
+
+.btn:active,
+.search-btn:active,
+.apply-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 16px rgba(34, 32, 27, 0.1), 0 1px 0 rgba(255, 255, 255, 0.65) inset;
+}
+
+@media (max-width: 520px) {
+    .btn,
+    .search-btn,
+    .apply-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+#search-widget-popup,
+.popup-content,
+.ui-dialog {
+    background: rgba(255, 253, 245, 0.96) !important;
+    border: 1px solid rgba(169, 158, 136, 0.6);
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(17, 20, 20, 0.14), 0 1px 0 rgba(255, 255, 255, 0.85) inset;
+    padding: clamp(1rem, 2vw + 0.5rem, 1.6rem);
+    max-width: min(960px, 94vw);
+}
+
+.ui-dialog .ui-dialog-titlebar,
+.popup-content .popup-header {
+    background: transparent;
+    border: none;
+    padding-bottom: 8px;
+    box-shadow: none;
+}
+
+.ui-dialog .ui-dialog-buttonpane button,
+.popup-content .btn,
+.popup-content .apply-btn {
+    min-width: clamp(140px, 24vw, 220px);
+}
+
+/* ======================================================
    4. ICONS & IMAGES (локальные файлы)
 ====================================================== */
 
@@ -232,15 +312,27 @@ select {
     height: 1em; /* ← высота = высоте шрифта */
 }
 
+.rate .secondary,
+.rate small,
+.rate .note {
+    color: rgba(75, 70, 59, 0.7);
+    font-weight: 500;
+}
+
 #rubImg {
     height: 1em;
     width: 1em;
     background: url('./rub.png') center / contain no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    translate: 0 0.5px;
 }
 
 #rubImg-small {
     background-image: url('./rub.png');
     background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* ожидание */
