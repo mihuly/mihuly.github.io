@@ -74,6 +74,7 @@ input, select, textarea {
 }
 .work-button::after {
     content: "↗";
+   font-size: 1em;
     margin-left: 0.25em;
 }
 
