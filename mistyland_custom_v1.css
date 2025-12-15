@@ -140,6 +140,12 @@ input, select, textarea {
 .date-picker-wrapper .month-wrapper table div.day.invalid {
     color: #5555555c !important;
 }
+.date-picker-wrapper .month-wrapper table .day {
+    color: #4B463B !important;
+    font-size: 15px !important;
+      font-family: 'InterDisplay', Arial, sans-serif !important;
+   letter-spacing: 0.01em !important;
+}
 
 
 .date-picker-wrapper .month-wrapper table div.day.real-today:not(.checked) {
