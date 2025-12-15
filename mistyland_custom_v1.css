@@ -53,6 +53,10 @@ input, select, textarea {
    width: 100vw !important;
    background-color: transparent !important;
    color: #4b463b;
+   display: flex;
+    flex-wrap: wrap;          /* ← ключевое */
+    align-items: flex-end;    /* выравнивание по низу (кнопка и input) */
+    gap: 12px;                /* расстояние между элементами */
 }
 
 .search_unit > span:first-child {
@@ -61,6 +65,14 @@ input, select, textarea {
 .search_unit > input {
     background-color: #e7e2d2;
    border-color: transparent;
+}
+#bronperiod-container {
+    flex: 1 1 260px;
+    min-width: 220px;
+}
+#bronperiod {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .work-button {
@@ -79,6 +91,7 @@ input, select, textarea {
     font-size: 1.1em;
     letter-spacing: 0.01em;
     text-align: center;
+   flex: 0 0 auto;
 }
 .work-button::after {
     content: "↗";
