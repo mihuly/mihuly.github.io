@@ -56,7 +56,8 @@ input, select, textarea {
    background-color: transparent !important;
    color: #4b463b;
    display: flex;
-    flex-wrap: wrap;          /* ← ключевое */
+    flex-wrap: wrap;      /* ← ключевое */
+   flex-align: flex-end;
     align-items: flex-end;    /* выравнивание по низу (кнопка и input) */
     gap: 12px;                /* расстояние между элементами */
 }
@@ -69,7 +70,7 @@ input, select, textarea {
    border-color: transparent;
 }
 #bronperiod-container {
-    flex: 1 1 260px;
+    flex: 0 1 260px;
     min-width: 220px;
    max-width: 400px;
 }
