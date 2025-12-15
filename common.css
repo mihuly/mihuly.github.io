@@ -1,0 +1,61 @@
+﻿body 
+{
+	margin:0px;
+}
+
+.center-column 
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+#c-label 
+{
+    color: #999;
+    font-size: 12px;
+    float: right;
+    cursor: pointer;	
+    display: none;	
+}
+
+#c-label > img
+{
+    width: 16px;
+    vertical-align: text-bottom;
+}
+
+@media only screen and (max-width: 960px) 
+{    
+    .center-column 
+    {
+        width: auto !important;
+    } 
+}
+
+#reservemaster iframe
+{
+	/*height: 704px;
+    width: 548px; */
+    height: 780px;
+    width: 920px;    
+}
+
+input[type="date"]::-webkit-clear-button {
+ -webkit-appearance: none;
+  display: none;
+}
+
+input[type="date"]::-ms-clear {
+ display: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  display: none;
+}
+
+#childs-container span {
+    white-space: nowrap;
+}
+
