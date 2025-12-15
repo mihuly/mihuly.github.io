@@ -68,6 +68,7 @@ input, select, textarea {
 .search_unit > input {
     background-color: #e7e2d2;
    border-color: transparent;
+   font-size: 1em;
 }
 #bronperiod-container {
    
@@ -96,7 +97,7 @@ input, select, textarea {
     padding-top: 12px;
     padding-bottom: 10px;
     text-transform: none;
-    font-size: 1.1em;
+    font-size: 1.3em;
     letter-spacing: 0.01em;
     text-align: center;
    flex: 0 0 auto;
