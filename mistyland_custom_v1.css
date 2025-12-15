@@ -51,6 +51,140 @@ button,
     font-feature-settings: "kern" 1, "liga" 1;
    color: #4B463B !important;
 }
+
+
+/* ======================================================
+   3.1 TYPOGRAPHY SCALE & SPACING
+   Заголовки, лейблы, цены, календарь
+====================================================== */
+
+.search .title,
+.roomtype-name,
+.rate,
+.daterangepicker .drp-calendar .month,
+.daterangepicker .calendar-table th,
+.search label,
+.detail-unit .data-label {
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+}
+
+.search .title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.roomtype-name {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.rate {
+    font-size: 18px;
+    font-weight: 600;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.daterangepicker .drp-calendar .month,
+.daterangepicker .calendar-table th {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.search label,
+.detail-unit .data-label {
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* Responsive typography down to 360px */
+@media (max-width: 768px) {
+    .search .title {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    .roomtype-name {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .rate {
+        font-size: 17px;
+        margin-top: 4px;
+    }
+
+    .daterangepicker .drp-calendar .month,
+    .daterangepicker .calendar-table th {
+        font-size: 15px;
+    }
+
+    .search label,
+    .detail-unit .data-label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search .title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .roomtype-name {
+        font-size: 18px;
+    }
+
+    .rate {
+        font-size: 16px;
+    }
+
+    .daterangepicker .drp-calendar .month,
+    .daterangepicker .calendar-table th {
+        font-size: 14px;
+        padding-bottom: 6px;
+    }
+
+    .search label,
+    .detail-unit .data-label {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 360px) {
+    .search .title {
+        font-size: 20px;
+    }
+
+    .roomtype-name {
+        font-size: 17px;
+    }
+
+    .rate {
+        font-size: 15px;
+        gap: 4px;
+    }
+
+    .daterangepicker .drp-calendar .month,
+    .daterangepicker .calendar-table th {
+        font-size: 13px;
+    }
+
+    .search label,
+    .detail-unit .data-label {
+        font-size: 12.5px;
+    }
+}
 /* ======================================================
    4. СOLORS
 ====================================================== */
@@ -182,8 +316,7 @@ img {
 
 /* Основное описание номера / тарифа */
 .detail-description,
-.unit-description,
-.detail-unit .data-label {
+.unit-description {
     font-size: 16px;
     line-height: 1.45;
     font-weight: 400;
@@ -204,8 +337,7 @@ img {
 /* Мобильная адаптация */
 @media (max-width: 480px) {
     .detail-description,
-    .unit-description,
-    .detail-unit .data-label {
+    .unit-description {
         font-size: 15px;
     }
 
