@@ -172,7 +172,10 @@ input, select, textarea {
 }
 
 @media (max-width: 768px) {
-
+   
+#search-container .date-picker-wrapper {
+    width: 320px !important;
+}
   .date-picker-wrapper .month-wrapper {
     display: flex !important;
     flex-direction: column !important;
