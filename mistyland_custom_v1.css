@@ -42,6 +42,7 @@ html, body {
        letter-spacing: -0.01em !important;
     line-height: 1.1 !important;
     color: #4B463B !important;
+   text-transform: none !important;
 }
 
 input, select, textarea {
@@ -50,6 +51,7 @@ input, select, textarea {
    letter-spacing: -0.01em !important;
     line-height: 1.1 !important;
     color: #4B463B !important;
+   text-transform: none !important;
 }
 
 .date-picker-wrapper {
@@ -57,6 +59,7 @@ input, select, textarea {
    letter-spacing: -0.01em !important;
     line-height: 1.1 !important;
     color: #4B463B !important;
+   text-transform: none !important;
 }
 
 /* ======================================================
