@@ -195,6 +195,27 @@ button,
     background-color: transparent;
 }
 
+#search-widget .search input,
+#search-widget .search select,
+#search-widget .search .search-btn {
+    font-size: 1.0625rem;
+    line-height: 1.2;
+}
+
+#search-widget .search input,
+#search-widget .search select {
+    min-height: 3.2rem;
+    padding: 0.85rem 1rem;
+    border-radius: 0.9rem;
+    border-color: rgba(169, 158, 136, 0.7);
+}
+
+#search-widget .search .search-btn {
+    min-height: 3.2rem;
+    padding: 0.9rem 1.6rem;
+    border-radius: 999px;
+}
+
 #search-widget-popup a[title="Закрыть"] {
     color: #1D2C2A !important;
     cursor: pointer;
