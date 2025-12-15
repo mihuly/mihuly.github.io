@@ -72,9 +72,14 @@ input, select, textarea {
     letter-spacing: 0.01em;
     text-align: center;
 }
+.work-button::after {
+    content: "↗";
+    margin-left: 0.25em;
+}
 
     .work-button:hover {
         border-color: transparent;
+       opacity:0.6;
     }
 
 
