@@ -78,6 +78,7 @@ input, select, textarea {
 #bronperiod {
     width: 100%;
     box-sizing: border-box;
+   background-size: auto 90%;
 }
 .datepicker {
    text-transform: none;
