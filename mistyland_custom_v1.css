@@ -52,6 +52,10 @@ input, select, textarea {
 .search {
    width: 100vw;
 }
+
+.search_unit > span:first-child {
+    display: none;
+}
 .work-button {
     background-color: transparent;
     cursor: pointer;
