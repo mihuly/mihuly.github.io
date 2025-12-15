@@ -44,6 +44,26 @@
 #search-container {
    width: 100vw;
 }
+.work-button {
+    background-color: transparent;
+    cursor: pointer;
+    border-color: transparent;
+    border-style: solid;
+    border-width: thin;
+    min-height: 16px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    text-transform: none;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+    .work-button:hover {
+        border-color: transparent;
+    }
 
 
 /* ======================================================
