@@ -61,6 +61,10 @@ input, select, textarea {
     align-items: center;    /* выравнивание по центру (кнопка и input) */
     gap: 12px;                /* расстояние между элементами */
 }
+.search_unit {
+   padding-top: 0px;
+   padding-bottom: 0px;
+}
 
 .search_unit > span:first-child {
     display: none;
