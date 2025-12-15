@@ -58,7 +58,7 @@ input, select, textarea {
    display: flex;
     flex-wrap: wrap;      /* ← ключевое */
    justify-content: flex-end;
-    align-items: flex-end;    /* выравнивание по низу (кнопка и input) */
+    align-items: center;    /* выравнивание по центру (кнопка и input) */
     gap: 12px;                /* расстояние между элементами */
 }
 
