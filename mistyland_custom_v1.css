@@ -123,6 +123,8 @@ input, select, textarea {
 .date-picker-wrapper .month-wrapper {
     color: #4b463b;
     background-color: #fdfbf1 !important;
+     font-family: 'InterDisplay', Arial, sans-serif !important;
+   letter-spacing: 0.01em !important;
 }
 
 .date-picker-wrapper .month-wrapper table div.day.checked {
@@ -141,8 +143,6 @@ input, select, textarea {
     padding-top: 3px;
     padding-right: 2px;
 }
-
-
 
 
 
