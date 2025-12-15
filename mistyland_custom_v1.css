@@ -167,6 +167,32 @@ input, select, textarea {
     letter-spacing: 0.01em;
 }
 
+@media (max-width: 768px) {
+
+  .date-picker-wrapper {
+    width: 320px !important;
+    max-width: calc(100vw - 32px);
+    margin: 0 auto !important;
+    padding: 12px;
+  }
+
+  .date-picker-wrapper .month-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .date-picker-wrapper .month-wrapper table {
+    width: 100% !important;
+    margin: 0 auto 12px auto !important;
+  }
+
+  .date-picker-wrapper .gap {
+    display: none !important;
+  }
+
+}
+
 
 
 /* ======================================================
