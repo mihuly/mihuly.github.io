@@ -144,6 +144,10 @@ input, select, textarea {
     padding-right: 2px;
 }
 
+.month-name {
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
 
 
 
