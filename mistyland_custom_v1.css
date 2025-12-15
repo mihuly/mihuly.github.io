@@ -154,7 +154,7 @@ input, select, textarea {
     background-color: #FF895C;
     color: #F7F1DF !important;
     padding-top: 3px;
-    padding-right: 2px;
+    padding-right: 0px;
 }
 
 .month-name {
