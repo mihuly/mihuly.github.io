@@ -140,7 +140,7 @@ input, select, textarea {
 }
 
 .date-picker-wrapper .month-wrapper table div.day.invalid {
-    color: #5555555c !important;
+    opacity: 0.6;
 }
 .date-picker-wrapper .month-wrapper table .day {
     color: #4B463B !important;
