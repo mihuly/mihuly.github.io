@@ -43,10 +43,12 @@
 ====================================================== */
 body {
     font-family: 'InterDisplay', Arial, sans-serif;
+   letter-spacing: 0.01em;
 }
 
 input, select, textarea {
-     font-family: 'InterDisplayReg', Arial, sans-serif;
+   font-family: 'InterDisplayReg', Arial, sans-serif;
+   letter-spacing: 0.01em;
 }
 
 .search {
