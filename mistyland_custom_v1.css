@@ -313,6 +313,14 @@ roomtype-price .room-button, .variants-button {
    letter-spacing: 0.01em !important;
     }
 
+.ex-name {
+   font-size: 1em;
+}
+.ex-description {
+   font-size: 0.6em;
+   oacity: 0.6;
+}
+
 /* ======================================================
    4. ICONS & IMAGES (локальные файлы)
 ====================================================== */
