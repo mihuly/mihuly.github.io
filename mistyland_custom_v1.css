@@ -235,6 +235,7 @@ roomtype-price .room-button, .variants-button {
 }
 .price {
    font-size: 1em !important;
+   margin-top: 12px;
 }
 .price-from, .price, .rate {
    opacity: 0.6 !important;
@@ -258,6 +259,7 @@ roomtype-price .room-button, .variants-button {
 
 .room-button {
    background-color: transparent;
+   color: #F37E53;
     cursor: pointer;
     border-color: transparent;
     border-style: solid;
