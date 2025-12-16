@@ -287,6 +287,14 @@ roomtype-price .room-button, .variants-button {
         border-color: transparent;
        opacity:0.6;
     }
+/* ======================================================
+  ORDER SCREEN
+====================================================== */
+
+
+#room > .roomtype {
+    background-color: #fdfbf1 !important;
+}
 
 /* ======================================================
    4. ICONS & IMAGES (локальные файлы)
