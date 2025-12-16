@@ -1,12 +1,12 @@
-v/* ======================================================
-   MISTYLAND — BookingWidgetFront
-   FINAL CONSOLIDATED CSS
-   Все оригинальные стили + локальные ассеты
+/* ======================================================
+  MISTYLAND — BookingWidgetFront
+  FINAL CONSOLIDATED CSS
+  Все оригинальные стили + локальные ассеты
 ====================================================== */
 
 
 /* ======================================================
-   1. BASE ORIGINAL STYLES (ОБЯЗАТЕЛЬНО ПЕРВЫМИ)
+  1. BASE ORIGINAL STYLES (ОБЯЗАТЕЛЬНО ПЕРВЫМИ)
 ====================================================== */
 
 @import url("https://pms.frontdesk24.ru/BookingWidgetFront/Styles/common.css?v=7");
@@ -18,386 +18,403 @@ v/* ======================================================
 
 
 /* ======================================================
-   2. FONT — INTER VARIABLE (локально)
+  2. FONT — INTER VARIABLE (локально)
 ====================================================== */
 
 @font-face {
-    font-family: 'InterDisplay';
-    src: url('./InterDisplay-Medium.woff2') format('woff2');
-    font-weight: 500 900; /* ключевой момент */
-    font-style: normal;
-    font-display: swap;
+font-family: 'InterDisplay';
+src: url('./InterDisplay-Medium.woff2') format('woff2');
+font-weight: 500 900; /* ключевой момент */
+font-style: normal;
+font-display: swap;
 }
 
 @font-face {
-    font-family: 'InterDisplayReg';
-    src: url('./InterDisplay-Regular.woff2') format('woff2');
-    font-weight: 100 400; /* ключевой момент */
-    font-style: normal;
-    font-display: swap;
+font-family: 'InterDisplayReg';
+src: url('./InterDisplay-Regular.woff2') format('woff2');
+font-weight: 100 400; /* ключевой момент */
+font-style: normal;
+font-display: swap;
 }
 
 
 /* ======================================================
-   SEARCH WIDGET
+  SEARCH WIDGET
 ====================================================== */
 body {
-    font-family: 'InterDisplay', Arial, sans-serif;
-   letter-spacing: 0.01em !important;
+font-family: 'InterDisplay', Arial, sans-serif;
+letter-spacing: 0.01em !important;
 }
 
 input, select, textarea {
-   font-family: 'InterDisplayReg', Arial, sans-serif;
-   letter-spacing: 0.03em !important;
+font-family: 'InterDisplayReg', Arial, sans-serif;
+letter-spacing: 0.03em !important;
 }
 
 .search {
-   width: 100vw !important;
-   color: #4b463b;
-   display: flex;
-    flex-wrap: wrap;      /* ← ключевое */
-   justify-content: flex-end;
-    align-items: center;    /* выравнивание по центру (кнопка и input) */
-    gap: 12px;                /* расстояние между элементами */
+width: 100vw !important;
+color: #4b463b;
+display: flex;
+flex-wrap: wrap;      /* ← ключевое */
+justify-content: flex-end;
+align-items: center;    /* выравнивание по центру (кнопка и input) */
+gap: 12px;                /* расстояние между элементами */
 }
 #search-container {
-   background-color: transparent !important;
+background-color: transparent !important;
 }
 
 .search_unit {
-   padding-top: 0px;
-   padding-bottom: 0px;
+padding-top: 0px;
+padding-bottom: 0px;
 }
 
 .search_unit > span:first-child {
-    display: none;
+display: none;
 }
 .search_unit > input {
-    background-color: #e7e2d2;
-   border-color: transparent;
-   font-size: 1em;
+background-color: #e7e2d2;
+border-color: transparent;
+font-size: 1em;
 }
 #bronperiod-container {
-   
-    min-width: 220px;
-   max-width: 400px;
+
+min-width: 220px;
+max-width: 400px;
 }
 #bronperiod {
-    width: 100%;
-    box-sizing: border-box;
-   background-size: auto 70%;
-   background-position: right 10px center !important;
+width: 100%;
+box-sizing: border-box;
+background-size: auto 70%;
+background-position: right 10px center !important;
 }
 .datepicker {
-   text-transform: none;
+text-transform: none;
 }
 
 
 .work-button {
-    background-color: transparent;
-    cursor: pointer;
-    border-color: transparent;
-    border-style: solid;
-    border-width: thin;
-    white-space: nowrap;
-    min-height: 16px;
-    padding-left: 0px;
-    padding-right: 13px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    text-transform: none;
-    font-size: 1.3em;
-    letter-spacing: 0.01em;
-    text-align: center;
-   flex: 0 0 auto;
+background-color: transparent;
+cursor: pointer;
+border-color: transparent;
+border-style: solid;
+border-width: thin;
+white-space: nowrap;
+min-height: 16px;
+padding-left: 0px;
+padding-right: 13px;
+padding-top: 0px;
+padding-bottom: 0px;
+text-transform: none;
+font-size: 1.3em;
+letter-spacing: 0.01em;
+text-align: center;
+flex: 0 0 auto;
 }
 .work-button::after {
-    content: "↗";
-   font-size: 1em;
-    margin-left: 0.25em;
+content: "↗";
+font-size: 1em;
+margin-left: 0.25em;
 }
 
-    .work-button:hover {
-        border-color: transparent;
-       opacity:0.6;
-    }
+.work-button:hover {
+border-color: transparent;
+opacity:0.6;
+}
 
 /* ======================================================
-  DATEPICKER
+ DATEPICKER
 ====================================================== */
 
 
 .date-picker-wrapper .month-wrapper {
-    color: #4b463b;
-    background-color: #fdfbf1 !important;
-     font-family: 'InterDisplay', Arial, sans-serif !important;
-   letter-spacing: 0.01em !important;
-    border-radius: 0px;
+color: #4b463b;
+background-color: #fdfbf1 !important;
+font-family: 'InterDisplay', Arial, sans-serif !important;
+letter-spacing: 0.01em !important;
+border-radius: 0px;
 }
 
 .date-picker-wrapper .month-wrapper table div.day.checked {
-        background-color: #F9E284 !important;
-        width: 100%;
-        margin: 0px;
-        margin-left: 0px;
-        padding-top: 2px;
-        margin-top: 0px;
-        margin-bottom: 1px;
-        height: 23px;
+background-color: #F9E284 !important;
+width: 100%;
+margin: 0px;
+margin-left: 0px;
+padding-top: 2px;
+margin-top: 0px;
+margin-bottom: 1px;
+height: 23px;
 }
 }
 
 .date-picker-wrapper .month-wrapper table div.day.invalid {
-    opacity: 0.6 !important;
+opacity: 0.6 !important;
 }
 .date-picker-wrapper .month-wrapper table .day {
-    color: #4B463B !important;
-    font-size: 15px !important;
-      font-family: 'InterDisplay', Arial, sans-serif !important;
-   letter-spacing: 0.01em !important;
+color: #4B463B !important;
+font-size: 15px !important;
+font-family: 'InterDisplay', Arial, sans-serif !important;
+letter-spacing: 0.01em !important;
 }
 
 
 .date-picker-wrapper .month-wrapper table div.day.real-today:not(.checked) {
-    background-color: #FF895C;
-    color: #F7F1DF !important;
-    padding-top: 3px;
-    padding-right: 0px;
+background-color: #FF895C;
+color: #F7F1DF !important;
+padding-top: 3px;
+padding-right: 0px;
 }
 
 .month-name {
-    text-transform: none;
-    letter-spacing: 0.01em;
+text-transform: none;
+letter-spacing: 0.01em;
 }
 .week-name {
-    text-transform: uppercase;
-    letter-spacing: 0.01em;
+text-transform: uppercase;
+letter-spacing: 0.01em;
 }
 
 @media (max-width: 768px) {
-   
-#search-container .date-picker-wrapper {
-    width: 320px !important;
-}
-  .date-picker-wrapper .month-wrapper {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center;
-  }
 
-  .date-picker-wrapper .month-wrapper table {
-    width: 100% !important;
-    margin: 0 auto 12px auto !important;
-  }
+#search-container .date-picker-wrapper {
+width: 320px !important;
+}
+.date-picker-wrapper .month-wrapper {
+display: flex !important;
+flex-direction: column !important;
+align-items: center;
+}
+
+.date-picker-wrapper .month-wrapper table {
+width: 100% !important;
+margin: 0 auto 12px auto !important;
+}
 }
 
 /* ======================================================
-   ROOMS
+  ROOMS
 ====================================================== */
 
 
 .variants-button {
-    background-color: transparent;
-    cursor: pointer;
-    border-color: transparent;
-    border-style: solid;
-    border-width: thin;
-    white-space: nowrap;
-    min-height: 16px;
-    padding-left: 0px;
-    padding-right: 13px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    text-transform: none;
-    font-size: 1em;
-    letter-spacing: 0.01em;
-    text-align: left;
-   flex: 0 0 auto;
+background-color: transparent;
+cursor: pointer;
+border-color: transparent;
+border-style: solid;
+border-width: thin;
+white-space: nowrap;
+min-height: 16px;
+padding-left: 0px;
+padding-right: 13px;
+padding-top: 0px;
+padding-bottom: 0px;
+text-transform: none;
+font-size: 1em;
+letter-spacing: 0.01em;
+text-align: left;
+flex: 0 0 auto;
 }
 
 roomtype-price .room-button, .variants-button {
-    margin-top: 10px;
+margin-top: 10px;
 }
 
 .variants-button::after {
-    content: "↗";
-   font-size: 1em;
-    margin-left: 0.25em;
+content: "↗";
+font-size: 1em;
+margin-left: 0.25em;
 }
 
-    .variants-button:hover {
-        border-color: transparent;
-       opacity:0.6;
-    }
+.variants-button:hover {
+border-color: transparent;
+opacity:0.6;
+}
 
 .roomtype-price {
-       width: 152px !important;
+width: 152px !important;
 }
 .price {
-   font-size: 1em !important;
-   margin-top: 12px;
+font-size: 1em !important;
+margin-top: 12px;
 }
 .price-from, .price, .rate {
-   opacity: 0.6 !important;
+opacity: 0.6 !important;
 }
 .price::after {
-    content: " ₽";
-    font-weight: inherit;
-    font-size: 1em;
+content: " ₽";
+font-weight: inherit;
+font-size: 1em;
 }
 
 #rubImg {
-   display: none;
-    margin-left: 0px;
+display: none;
+margin-left: 0px;
 }
 
 .description {
-     font-family: 'InterDisplayReg', Arial, sans-serif;
-   letter-spacing: 0.01em !important;
-   font-size: 0.8em;
+font-family: 'InterDisplayReg', Arial, sans-serif;
+letter-spacing: 0.01em !important;
+font-size: 0.8em;
 }
 
 .room-button {
-   background-color: transparent;
-   color: #F37E53;
-    cursor: pointer;
-    border-color: transparent;
-    border-style: solid;
-    border-width: thin;
-    white-space: nowrap;
-    min-height: 16px;
-    padding-left: 0px;
-    padding-right: 13px;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    text-transform: none;
-    font-size: 1em;
-    letter-spacing: 0.01em;
-    text-align: left;
-   flex: 0 0 auto;
+background-color: transparent;
+color: #F37E53;
+cursor: pointer;
+border-color: transparent;
+border-style: solid;
+border-width: thin;
+white-space: nowrap;
+min-height: 16px;
+padding-left: 0px;
+padding-right: 13px;
+padding-top: 10px;
+padding-bottom: 0px;
+text-transform: none;
+font-size: 1em;
+letter-spacing: 0.01em;
+text-align: left;
+flex: 0 0 auto;
 }
 
 .room-button::after {
-    content: "↗";
-   font-size: 1em;
-    margin-left: 0.25em;
+content: "↗";
+font-size: 1em;
+margin-left: 0.25em;
 }
 
-    .room-button:hover {
-        border-color: transparent;
-       opacity:0.6;
-    }
+.room-button:hover {
+border-color: transparent;
+opacity:0.6;
+}
+/* ======================================================
+ ORDER SCREEN
+====================================================== */
+
+
+#room > .roomtype {
+background-color: #fdfbf1 !important;
+}
+
+.extraservice > .col.ex-price {
+    min-width: 50px;
+    letter-spacing: 0.01em;
+    font-size: 1em;
+    opacity: 0.6 !important;
+    text-align: right;
+    padding-right: 15px;
+}
 
 /* ======================================================
-   4. ICONS & IMAGES (локальные файлы)
+  4. ICONS & IMAGES (локальные файлы)
 ====================================================== */
 
 /* календарь */
 .datepicker {
-    background-image: url('./calendar.png');
+background-image: url('./calendar.png');
 }
 
 /* select стрелка */
 select {
-    background-image: url('./down.png');
+background-image: url('./down.png');
 }
 
 /* rooms */
 .roomtype-info > .more {
-    background-image: url('./down.png');
+background-image: url('./down.png');
 }
 
 .roomtype-info > .less {
-    background-image: url('./down.png');
-    transform: rotate(180deg);
+background-image: url('./down.png');
+transform: rotate(180deg);
 }
 
 /* рубль */
 
 .rate {
-    display: inline-flex;
-    align-items: center;
-    height: 1em; /* ← высота = высоте шрифта */
+display: inline-flex;
+align-items: center;
+height: 1em; /* ← высота = высоте шрифта */
 }
 
 #rubImg {
-    height: 1em;
-    width: 1em;
-    background: url('./rub.png') center / contain no-repeat;
+height: 1em;
+width: 1em;
+background: url('./rub.png') center / contain no-repeat;
 }
 
 #rubImg-small {
-    background-image: url('./rub.png');
-    background-size: contain;
+background-image: url('./rub.png');
+background-size: contain;
 }
 
 /* ожидание */
 .wait {
-    background-image: url('./wait.gif');
+background-image: url('./wait.gif');
 }
 
 /* jssor thumbnails */
 .jssort01 .c {
-    background-image: url('./t01.png');
+background-image: url('./t01.png');
 }
 
 /* jssor arrows */
 .jssora04l,
 .jssora04r {
-    background-image: url('./a04.png');
+background-image: url('./a04.png');
 }
 
 .jssora01l {
-    background-image: url('./prev.png');
+background-image: url('./prev.png');
 }
 
 .jssora01r {
-    background-image: url('./next.png');
+background-image: url('./next.png');
 }
 
 
 /* ======================================================
-   5. jQuery UI ICON SPRITES (локально)
+  5. jQuery UI ICON SPRITES (локально)
 ====================================================== */
 
 .ui-widget-content .ui-icon,
 .ui-widget-header .ui-icon {
-    background-image: url('./ui-icons_444444_256x240.png');
+background-image: url('./ui-icons_444444_256x240.png');
 }
 
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-    background-image: url('./ui-icons_555555_256x240.png');
+background-image: url('./ui-icons_555555_256x240.png');
 }
 
 .ui-state-active .ui-icon {
-    background-image: url('./ui-icons_ffffff_256x240.png');
+background-image: url('./ui-icons_ffffff_256x240.png');
 }
 
 .ui-state-highlight .ui-icon {
-    background-image: url('./ui-icons_777777_256x240.png');
+background-image: url('./ui-icons_777777_256x240.png');
 }
 
 .ui-state-error .ui-icon {
-    background-image: url('./ui-icons_cc0000_256x240.png');
+background-image: url('./ui-icons_cc0000_256x240.png');
 }
 
 
 /* ======================================================
-   6. SAFE NORMALIZATION (НИЧЕГО НЕ ЛОМАЕТ)
+  6. SAFE NORMALIZATION (НИЧЕГО НЕ ЛОМАЕТ)
 ====================================================== */
 
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+max-width: 100%;
+height: auto;
 }
 
 
 
 /* ======================================================
-   END
+  END
 ====================================================== */
