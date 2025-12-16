@@ -350,6 +350,11 @@ letter-spacing: 0.03em !important;
   color: #4B463B;
 }
 
+.detail-unit > input, .detail-unit > textarea {
+    border-color: transparent;
+    background-color: #e7e2d2;
+}
+
 /* ======================================================
   4. ICONS & IMAGES (локальные файлы)
 ====================================================== */
