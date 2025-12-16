@@ -237,11 +237,17 @@ input, select, textarea {
 .price {
    font-size: 1em !important;
 }
-.price-form, .price, .rate {
+.price-from, .price, .rate {
    opacity: 0.6 !important;
+}
+.price::after {
+    content: " ₽";
+    font-weight: inherit;
+    font-size: 0.9em;
 }
 
 #rubImg {
+   display: none;
     margin-left: 0px;
 }
 
