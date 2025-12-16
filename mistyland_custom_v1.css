@@ -193,7 +193,7 @@ input, select, textarea {
 ====================================================== */
 
 #search-widget-popup {
-    background: #fef4f4;
+    background: #fef4f4 !important;
 }
 .variants-button {
     background-color: transparent;
