@@ -1,4 +1,4 @@
-/* ======================================================
+v/* ======================================================
    MISTYLAND — BookingWidgetFront
    FINAL CONSOLIDATED CSS
    Все оригинальные стили + локальные ассеты
@@ -304,6 +304,14 @@ roomtype-price .room-button, .variants-button {
     text-align: right;
     padding-right: 15px;
 }
+
+  .ui-widget input,
+    .ui-widget select,
+    .ui-widget textarea,
+    .ui-widget button {
+        font-family: 'InterDisplayReg', Arial, sans-serif;
+   letter-spacing: 0.01em !important;
+    }
 
 /* ======================================================
    4. ICONS & IMAGES (локальные файлы)
