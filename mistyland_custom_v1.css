@@ -304,6 +304,13 @@ background-color: #4b463b !important;
     text-align: right;
     padding-right: 15px;
 }
+.ex-description {
+  font-size: 0.6em;
+  opacity: 0.6;
+}
+.ex-name {
+  font-size: 1em;
+}
 
 /* ======================================================
   4. ICONS & IMAGES (локальные файлы)
