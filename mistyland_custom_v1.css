@@ -308,6 +308,8 @@ background-color: #e7e2d2 !important;
   font-size: 0.8em;
   padding-top: 2px;
   color: #4B463B;
+  font-family: 'InterDisplayReg', Arial, sans-serif;
+letter-spacing: 0.03em !important;
   opacity: 0.6;
 }
 .ex-name {
