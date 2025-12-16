@@ -215,8 +215,8 @@ text-align: left;
 flex: 0 0 auto;
 }
 
-roomtype-price .room-button, .variants-button {
-margin-top: 10px;
+.roomtype-price, .room-button, .variants-button {
+margin-top: 10px !important;
 }
 
 .variants-button::after {
