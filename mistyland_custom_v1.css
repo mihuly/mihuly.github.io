@@ -296,6 +296,15 @@ roomtype-price .room-button, .variants-button {
     background-color: #fdfbf1 !important;
 }
 
+.extraservice > .col.ex-price {
+    min-width: 50px;
+    letter-spacing: 0.01em;
+    font-size: 1em;
+    opacity: 0.6 !important;
+    text-align: right;
+    padding-right: 15px;
+}
+
 /* ======================================================
    4. ICONS & IMAGES (локальные файлы)
 ====================================================== */
