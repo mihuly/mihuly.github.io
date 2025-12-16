@@ -225,8 +225,12 @@ input, select, textarea {
     }
 
 .roomtype-price {
-       width: 152px;
+       width: 152px !important;
 }
+.price {
+   font-size: 1em;
+}
+
 #rubImg {
     margin-left: 0px;
 }
