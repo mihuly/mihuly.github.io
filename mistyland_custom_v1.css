@@ -242,7 +242,7 @@ roomtype-price .room-button, .variants-button {
 .price::after {
     content: " ₽";
     font-weight: inherit;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 #rubImg {
