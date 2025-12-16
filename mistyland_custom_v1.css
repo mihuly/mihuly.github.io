@@ -512,7 +512,11 @@ max-width: 100%;
 height: auto;
 }
 
-@import url("https://mihuly.github.io/mistyland-patch.js");
+#personalDataUnit {
+    line-height: 1.2em;
+    font-size: 0.6em;
+    font-family: 'InterDisplayReg', Arial, sans-serif;
+}
 
 /* ======================================================
   END
