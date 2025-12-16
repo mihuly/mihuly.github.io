@@ -194,13 +194,7 @@ input, select, textarea {
 /* ======================================================
    ROOMS
 ====================================================== */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: rgba(167, 99, 99, 0.6);
-  z-index: -1;
-}
+
 
 .variants-button {
     background-color: transparent;
