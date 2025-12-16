@@ -385,9 +385,9 @@ margin-left: 0.25em;
 }
 
 .blueButton:hover {
-  background-color: transparent;
-border-color: transparent;
-background-image: none;
+  background-color: transparent !important;
+border-color: transparent !important;
+background-image: none !important;
 opacity:0.6;
 }
 
