@@ -195,6 +195,10 @@ input, select, textarea {
 #search-widget-popup {
     background-color: #fef4f4 !important;
 }
+#search-widget-popup a {
+ color: #4B463B;
+}
+
 .variants-button {
     background-color: transparent;
     cursor: pointer;
