@@ -404,6 +404,14 @@ label {
 label > input[type="checkbox"] {
   margin-top: 3px;
 }
+
+#personalDataUnit {
+    width: 343px;
+    line-height: 1.2em;
+    font-size: 0.6em;
+    font-family: 'InterDisplayReg', Arial, sans-serif;
+}
+
 /* ======================================================
   4. ICONS & IMAGES (локальные файлы)
 ====================================================== */
@@ -510,12 +518,6 @@ box-sizing: border-box;
 img {
 max-width: 100%;
 height: auto;
-}
-
-#personalDataUnit {
-    line-height: 1.2em;
-    font-size: 0.6em;
-    font-family: 'InterDisplayReg', Arial, sans-serif;
 }
 
 /* ======================================================
