@@ -259,7 +259,6 @@ font-size: 0.8em;
 
 .room-button {
 background-color: transparent;
-background-image: none;
 color: #F37E53;
 cursor: pointer;
 border-color: transparent;
@@ -360,6 +359,7 @@ letter-spacing: 0.03em !important;
 
 .blueButton {
 background-color: transparent;
+background-image: none;
 color: #F37E53;
 cursor: pointer;
 border-color: transparent;
