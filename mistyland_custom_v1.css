@@ -53,7 +53,6 @@ input, select, textarea {
 
 .search {
    width: 100vw !important;
-   background-color: transparent !important;
    color: #4b463b;
    display: flex;
     flex-wrap: wrap;      /* ← ключевое */
@@ -61,6 +60,10 @@ input, select, textarea {
     align-items: center;    /* выравнивание по центру (кнопка и input) */
     gap: 12px;                /* расстояние между элементами */
 }
+#search-container {
+   background-color: transparent !important;
+}
+
 .search_unit {
    padding-top: 0px;
    padding-bottom: 0px;
