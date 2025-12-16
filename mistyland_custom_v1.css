@@ -61,7 +61,7 @@ input, select, textarea {
     gap: 12px;                /* расстояние между элементами */
 }
 #search-container {
-   background-color: #8db4d2 !important;
+   background-color: transparent !important;
 }
 
 .search_unit {
