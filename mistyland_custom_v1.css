@@ -234,6 +234,9 @@ input, select, textarea {
 .price {
    font-size: 1em;
 }
+.price-form, .price, .rate {
+   opacity: 0.6;
+}
 
 #rubImg {
     margin-left: 0px;
