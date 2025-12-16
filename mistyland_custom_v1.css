@@ -145,7 +145,7 @@ margin-top: 0px;
 margin-bottom: 1px;
 height: 23px;
 }
-}
+
 
 .date-picker-wrapper .month-wrapper table div.day.invalid {
 opacity: 0.6 !important;
@@ -293,7 +293,7 @@ opacity:0.6;
 
 
 #room > .roomtype {
-background-color: #fdfbf1 !important;
+background-color: #4b463b !important;
 }
 
 .extraservice > .col.ex-price {
