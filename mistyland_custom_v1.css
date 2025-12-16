@@ -194,11 +194,14 @@ input, select, textarea {
 /* ======================================================
    ROOMS
 ====================================================== */
+body {
+  background: transparent !important;
+}
 
 #search-widget-popup {
     background-color: #a76363 !important;
-   opacity: 0.6;
 }
+
 #search-widget-popup a {
  color: #4B463B !important;
 }
