@@ -287,36 +287,6 @@ roomtype-price .room-button, .variants-button {
         border-color: transparent;
        opacity:0.6;
     }
-/* ======================================================
-  ORDER SCREEN
-====================================================== */
-
-
-#room > .roomtype {
-    background-color: #fdfbf1 !important;
-}
-
-.extraservice > .col.ex-price {
-    min-width: 50px;
-    letter-spacing: 0.01em;
-    font-size: 1em;
-    opacity: 0.6 !important;
-    text-align: right;
-    padding-right: 15px;
-}
-
-    .ui-widget select {
-        font-family: 'InterDisplayReg', Arial, sans-serif;
-   letter-spacing: 0.01em !important;
-    }
-
-.ex-name {
-   font-size: 1em;
-}
-.ex-description {
-   font-size: 0.6em;
-   oacity: 0.6;
-}
 
 /* ======================================================
    4. ICONS & IMAGES (локальные файлы)
