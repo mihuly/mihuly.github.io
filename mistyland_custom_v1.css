@@ -227,7 +227,9 @@ input, select, textarea {
 .roomtype-price {
        width: 152px;
 }
-
+#rubImg {
+    margin-left: 0px;
+}
 
 /* ======================================================
    4. ICONS & IMAGES (локальные файлы)
