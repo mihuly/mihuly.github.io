@@ -372,7 +372,7 @@ padding-right: 13px;
 padding-top: 10px;
 padding-bottom: 0px;
 text-transform: none;
-font-size: 1.5em;
+font-size: 1.5em !important;
 letter-spacing: 0.01em;
 text-align: left;
 flex: 0 0 auto;
@@ -385,6 +385,7 @@ margin-left: 0.25em;
 }
 
 .blueButton:hover {
+  background-color: transparent;
 border-color: transparent;
 background-image: none;
 opacity:0.6;
