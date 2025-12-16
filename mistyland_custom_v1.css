@@ -347,6 +347,7 @@ letter-spacing: 0.03em !important;
 
 .detail-unit > span {
   text-transform: none;
+  font-size: 0.8em;
   color: #4B463B;
 }
 
@@ -387,6 +388,13 @@ border-color: transparent;
 opacity:0.6;
 }
 
+.widgetLink {
+    color: #FF895C;
+}
+
+label > input[type=checkbox] {
+    vertical-align: center;
+}
 /* ======================================================
   4. ICONS & IMAGES (локальные файлы)
 ====================================================== */
