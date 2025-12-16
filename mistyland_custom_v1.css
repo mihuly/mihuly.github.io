@@ -217,9 +217,14 @@ input, select, textarea {
     text-transform: none;
     font-size: 1em;
     letter-spacing: 0.01em;
-    text-align: center;
+    text-align: left;
    flex: 0 0 auto;
 }
+
+roomtype-price .room-button, .variants-button {
+    margin-top: 10px;
+}
+
 .variants-button::after {
     content: "↗";
    font-size: 1em;
