@@ -345,7 +345,7 @@ letter-spacing: 0.03em !important;
   color: #4B463B;
 }
 
-.detail-unit {
+.detail-unit > span {
   text-transform: none;
   color: #4B463B;
 }
