@@ -307,10 +307,12 @@ background-color: #e7e2d2 !important;
 .ex-description {
   font-size: 0.8em;
   padding-top: 2px;
+  color: #4B463B;
   opacity: 0.6;
 }
 .ex-name {
   font-size: 1em;
+  color: #4B463B;
 }
 
 .extraservice > .col:nth-child(2) {
@@ -318,6 +320,15 @@ background-color: #e7e2d2 !important;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.extraservice.selected {
+    background-color: #e7e2d2;
+}
+
+.form-radio:checked {
+    background-color: #F9E284;
+    color: #4B463B;
 }
 
 /* ======================================================
