@@ -305,10 +305,7 @@ roomtype-price .room-button, .variants-button {
     padding-right: 15px;
 }
 
-  .ui-widget input,
-    .ui-widget select,
-    .ui-widget textarea,
-    .ui-widget button {
+    .ui-widget select {
         font-family: 'InterDisplayReg', Arial, sans-serif;
    letter-spacing: 0.01em !important;
     }
