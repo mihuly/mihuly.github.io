@@ -194,21 +194,8 @@ input, select, textarea {
 /* ======================================================
    ROOMS
 ====================================================== */
-#search-widget-popup {
-  position: relative;
-}
-
-#search-widget-popup::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(167, 99, 99, 0.6);
-  z-index: 0;
-}
-
-#search-widget-popup > * {
-  position: relative;
-  z-index: 1;
+html, body {
+  background-color: rgba(167, 99, 99, 0.6) !important;
 }
 
 .variants-button {
