@@ -232,10 +232,10 @@ input, select, textarea {
        width: 152px !important;
 }
 .price {
-   font-size: 1em;
+   font-size: 1em !important;
 }
 .price-form, .price, .rate {
-   opacity: 0.6;
+   opacity: 0.6 !important;
 }
 
 #rubImg {
