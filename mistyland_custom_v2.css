@@ -35,9 +35,10 @@ font-display: swap;
 /* ======================================================
   SEARCH WIDGET
 ====================================================== */
-
-.b-start__submit-field {
+   
+.s-btn, .b-result-item__view-more-btn {
 background-color: transparent;
+font-family: "InterDisplay", sans-serif;
 cursor: pointer;
 border-color: transparent;
 border-style: solid;
@@ -54,13 +55,13 @@ letter-spacing: 0.01em;
 text-align: center;
 flex: 0 0 auto;
 }
-.b-start__submit-field::after {
+.s-btn, .b-result-item__view-more-btn::after {
 content: "↗";
 font-size: 1em;
 margin-left: 0.25em;
 }
 
-.b-start__submit-field:hover {
+.s-btn, .b-result-item__view-more-btn:hover {
 border-color: transparent;
 opacity:0.6;
 }
