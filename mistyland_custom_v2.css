@@ -40,7 +40,10 @@ body {
 /* ======================================================
   SEARCH WIDGET
 ====================================================== */
-   
+
+.b-start__field-label {
+    font-size: 1em;
+}
 
 .s-btn,
 .b-result-item__view-more-btn {
