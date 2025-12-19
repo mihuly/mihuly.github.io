@@ -10,7 +10,6 @@
 ====================================================== */
 
 
-
 /* ======================================================
   2. FONT — INTER VARIABLE (локально)
 ====================================================== */
@@ -29,6 +28,12 @@ src: url('./InterDisplay-Regular.woff2') format('woff2');
 font-weight: 100 400; /* ключевой момент */
 font-style: normal;
 font-display: swap;
+}
+
+body {
+    font-family: 'InterDisplay', Arial, sans-serif;
+    font-size: 1em;
+    color: #4B463B;
 }
 
 
