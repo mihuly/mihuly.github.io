@@ -36,6 +36,35 @@ font-display: swap;
   SEARCH WIDGET
 ====================================================== */
 
+.b-start__submit-field {
+background-color: transparent;
+cursor: pointer;
+border-color: transparent;
+border-style: solid;
+border-width: thin;
+white-space: nowrap;
+min-height: 16px;
+padding-left: 0px;
+padding-right: 13px;
+padding-top: 0px;
+padding-bottom: 0px;
+text-transform: none;
+font-size: 1.3em;
+letter-spacing: 0.01em;
+text-align: center;
+flex: 0 0 auto;
+}
+.b-start__submit-field::after {
+content: "↗";
+font-size: 1em;
+margin-left: 0.25em;
+}
+
+.b-start__submit-field:hover {
+border-color: transparent;
+opacity:0.6;
+}
+
 /* ======================================================
  DATEPICKER
 ====================================================== */
