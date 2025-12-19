@@ -66,6 +66,13 @@ border-color: transparent;
 opacity:0.6;
 }
 
+.b-start {
+    background: transparent;
+    box-shadow: none;
+}
+
+
+
 /* ======================================================
  DATEPICKER
 ====================================================== */
