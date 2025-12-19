@@ -38,7 +38,7 @@ font-display: swap;
    
 .s-btn, .b-result-item__view-more-btn {
 background-color: transparent;
-font-family: "InterDisplay", sans-serif;
+font-family: 'InterDisplay', Arial, sans-serif;
 cursor: pointer;
 border-color: transparent;
 border-style: solid;
