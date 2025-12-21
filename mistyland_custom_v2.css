@@ -107,19 +107,46 @@ font-display: swap;
 .b-select-ghost-content {
   font-family: 'InterDisplayReg', Arial, sans-serif;
   letter-spacing: 0.03em;
-  font-size: 0.8em;
+  font-size: 1em;
   color: #4B463B;
 }
 
+.icon-drop, .select2-container .select2-selection .select2-selection__arrow:after, .b-select-ghost:after, .b-simple-drop:after, .b-combobox__trigger:after {
+    background-image: url("./icon-drop.svg");
+}
+
+.s-btn--addroom {
+   font-size: 1em;
+}
+
+.l-popup-container {
+  background-color: #F7F1DF;
+}
+
+.b-roomitem__field--btn {
+  padding-top: 0.5em;
+}
+
+.icon-plus, .icon-plus-span {
+    background-image: url(./icon-plus.svg);
+}
+
+.icon-minus {
+    background-image: url(./icon-minus.svg);
+}
+
+.icon-close2 {
+    background-image: url(./icon-close2.svg);
+
 /* ======================================================
  DATEPICKER
-.ui-datepicker {
-    font-family: 'InterDisplayReg', Arial, sans-serif;
-    width: 21em;
-    padding: 1em;
-}
+
 ====================================================== */
 
+.ui-datepicker .ui-widget-header, .ui-widget-content {
+    background-color: #F7F1DF;
+  color: #4B463B;
+}
 
 
 /* ======================================================
