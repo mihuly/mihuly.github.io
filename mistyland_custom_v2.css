@@ -117,6 +117,10 @@ font-display: swap;
 
 .s-btn--addroom {
    font-size: 1em;
+  padding-bottom: 1em;
+}
+.s-btn--ready {
+ padding-top: 1em;
 }
 
 .l-popup-container {
