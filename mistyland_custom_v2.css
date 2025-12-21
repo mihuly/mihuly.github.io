@@ -201,7 +201,7 @@ body {
 .b-result-item__services-item {
   filter: brightness(.5);
 }
-.icon-ruler, .icon-user, .icon-adult {
+.icon-ruler, .icon-user, .icon-adult, .icon-child {
   filter: brightness(.5);
 }
 
