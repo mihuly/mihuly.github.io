@@ -276,6 +276,12 @@ body {
     margin-left: 0px;
 }
 
+@media (max-width: 1128px) {
+    .upsale-summary {
+        padding-left: 10px; /* вместо margin-left */
+    }
+}
+
 .b-drop__trigger {
     font-family: 'InterDisplay', Arial, sans-serif;
     color: #4B463B;
