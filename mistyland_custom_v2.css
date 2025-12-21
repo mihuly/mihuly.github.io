@@ -152,6 +152,10 @@ font-display: swap;
     background-image: url(./icon-close2.svg);
 }
 
+.icon-guest {
+    background-image: url(./guest.svg);
+}
+
  .select2-container .select2-results__option--highlighted.select2-results__option--selectable {
         background-color: #F9E284;
         color: #4B463B;
