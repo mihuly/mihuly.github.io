@@ -33,7 +33,7 @@ font-display: swap;
 
 body {
       font-family: 'InterDisplayReg', Arial, sans-serif;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
     color: #4B463B;
 }
 
@@ -223,6 +223,13 @@ body {
  background-color: #F9E284;
 }
 .b-mob-bottom-bar .s-btn { 
+  color: #4B463B;
+}
+
+.b-result-item__name {
+    font-size: 2em;
+     font-family: 'InterDisplay', Arial, sans-serif;
+  letter-spacing: 0.01em;
   color: #4B463B;
 }
 
