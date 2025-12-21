@@ -204,7 +204,7 @@ body {
 .b-result-item__services-item {
   filter: brightness(.5);
 }
-.icon-ruler, .icon-user, .icon-adult, .icon-child, .icon-hamburger, .icon-key, .icon-reception-small {
+.icon-ruler, .icon-user, .icon-adult, .icon-child, .icon-hamburger, .icon-key, .icon-reception-small, .b-cart__item-option-num:before {
   filter: brightness(.5);
 }
 
