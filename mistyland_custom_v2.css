@@ -187,6 +187,10 @@ font-display: swap;
 .b-result-item {
    background-color: #F7F1DF;
 }
+.b-result-item__services {
+   background-color: #CABCA1;
+}
+
 
 /* ======================================================
  ORDER SCREEN
