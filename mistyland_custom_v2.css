@@ -175,7 +175,7 @@ body {
   color: #4B463B;
 }
 .ui-state-hover {
-  background: #FF895C;
+  background: #FF895C !important;
 }
 
 
