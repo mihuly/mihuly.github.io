@@ -153,7 +153,9 @@ font-display: swap;
 }
 
 .icon-guest {
-    background-image: url(./guest.svg);
+    background-image: url(./guest.png);
+     background-size: contain;
+    background-position: center;
 }
 
  .select2-container .select2-results__option--highlighted.select2-results__option--selectable {
