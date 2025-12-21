@@ -197,6 +197,9 @@ body {
 .b-result-item__services-item {
   filter: brightness(.5);
 }
+.b-result-item__services-item-tooltip {
+    background-color: #ffffff3d;
+}
 
 /* ======================================================
  ORDER SCREEN
