@@ -260,7 +260,7 @@ body {
   color: #4B463B;
 }
 
-.price {
+.upsale-summary .price {
   font-family: 'InterDisplay', Arial, sans-serif !important;
   letter-spacing: 0.01em;
 }
