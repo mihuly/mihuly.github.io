@@ -88,6 +88,8 @@ body {
    background-size: contain;      /* или 100% 100% */
   background-position: center;
   background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
    
 }
 
