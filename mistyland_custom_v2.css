@@ -104,6 +104,10 @@ font-display: swap;
   background-color: #F7F1DF;
 }
 
+.b-input-spinner input {
+  background-color: #F5F5F5;
+}
+
 .b-select-ghost-content {
   font-family: 'InterDisplayReg', Arial, sans-serif;
   letter-spacing: 0.03em;
