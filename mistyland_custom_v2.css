@@ -91,6 +91,11 @@ body {
    
 }
 
+.b-select-ghost {
+    border: none;
+  background-color: #F7F1DF;
+}
+
 
 /* ======================================================
  DATEPICKER
