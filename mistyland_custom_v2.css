@@ -261,6 +261,13 @@ body {
   letter-spacing: 0.01em;
 }
 
+.b-drop__trigger {
+    font-family: 'InterDisplay', Arial, sans-serif;
+    color: #4B463B;
+    font-size: 1.5em;
+    text-transform: none;
+    background: #F9E284;
+}
 
 /* ======================================================
   4. ICONS & IMAGES (локальные файлы)
