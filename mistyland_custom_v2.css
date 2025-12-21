@@ -208,6 +208,10 @@ body {
     background-color: #F9E284;
 }
 
+.price.grid-cell span:last-child {
+  margin-left: -1em;
+}
+
 /* ======================================================
  ORDER SCREEN
 ====================================================== */
