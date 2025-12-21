@@ -45,6 +45,8 @@ font-display: swap;
 
 .b-start__field-label {
     font-size: 1em;
+  font-family: 'InterDisplayReg', Arial, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 .s-btn,
