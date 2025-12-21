@@ -111,6 +111,10 @@ font-display: swap;
   color: #4B463B;
 }
 
+.icon-drop, .select2-container .select2-selection .select2-selection__arrow:after, .b-select-ghost:after, .b-simple-drop:after, .b-combobox__trigger:after {
+    background-image: url("./icon-drop.svg");
+}
+
 /* ======================================================
  DATEPICKER
 .ui-datepicker {
