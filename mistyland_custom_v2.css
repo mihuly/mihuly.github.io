@@ -116,11 +116,12 @@ font-display: swap;
 }
 
 .s-btn--addroom {
+  padding-top: 0.5em;
    font-size: 1em;
   padding-bottom: 1em;
 }
 .s-btn--ready {
- padding-top: 1em;
+ padding-top: 0.5em;
   margin-top: 0em;
   padding-bottom: 1em;
 }
@@ -128,10 +129,10 @@ font-display: swap;
 .l-popup-container {
   background-color: #F7F1DF;
 }
-
+/* 
 .b-roomitem__field--btn {
   padding-top: 0.5em;
-}
+} */
 
 .icon-plus, .icon-plus-span {
     background-image: url(./icon-plus.svg);
