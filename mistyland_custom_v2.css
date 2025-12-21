@@ -106,6 +106,9 @@ body {
 .b-input-spinner input {
   background-color: #FFFEFB;
 }
+.select2-container--default .select2-selection--single {
+    background-color: #FFFEFB;
+}
 
 .b-select-ghost-content {
   font-family: 'InterDisplayReg', Arial, sans-serif;
