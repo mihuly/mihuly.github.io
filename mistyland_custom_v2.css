@@ -270,15 +270,15 @@ body {
 }
 
 .upsale-summary {
-    padding-right: 26px;
-    padding-left: 250px;
-  margin-right: 0px;
-    margin-left: 0px;
+    padding-right: 26px !important;
+    padding-left: 250px !important;
+  margin-right: 0px !important;
+    margin-left: 0px !important;
 }
 
 @media (max-width: 1128px) {
     .upsale-summary {
-        padding-left: 10px; /* вместо margin-left */
+        padding-left: 10px !important; /* вместо margin-left */
     }
 }
 
