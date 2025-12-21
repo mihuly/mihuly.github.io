@@ -129,6 +129,8 @@ font-display: swap;
 
 .icon-plus, .icon-plus-span {
     background-image: url(./icon-plus.svg);
+      background-size: contain;
+    background-position: center;
 }
 
 .icon-minus {
