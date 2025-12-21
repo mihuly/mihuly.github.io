@@ -194,6 +194,9 @@ body {
 .b-filter {
  background-color: #F7F1DF;
 }
+.b-result-item__services-item {
+  filter: brightness(.5);
+}
 
 /* ======================================================
  ORDER SCREEN
