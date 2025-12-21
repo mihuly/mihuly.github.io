@@ -277,7 +277,7 @@ body {
   opacity: 0.9;
 }
 .b-cart__content {
-  background-color: #F9E284; 
+  background-color: #F9E284 !important; 
   color: #4B463B;
 }
 
