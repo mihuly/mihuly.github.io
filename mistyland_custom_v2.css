@@ -178,6 +178,10 @@ font-display: swap;
   ROOMS
 ====================================================== */
 
+.l-main-container {
+  background-color: black; !important;
+}
+
 /* ===============================
    FD24 — BLACK THEME (STEP 1)
    =============================== */
