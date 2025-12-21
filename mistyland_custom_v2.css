@@ -269,6 +269,13 @@ body {
   letter-spacing: 0.01em;
 }
 
+.upsale-summary {
+    padding-right: 26px;
+    padding-left: 250px;
+  margin-right: 0px;
+    margin-left: 0px;
+}
+
 .b-drop__trigger {
     font-family: 'InterDisplay', Arial, sans-serif;
     color: #4B463B;
