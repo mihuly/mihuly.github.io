@@ -115,13 +115,13 @@ font-display: swap;
     background-image: url("./icon-drop.svg");
 }
 
+.s-btn--addroom {
+   font-size: 1em;
+}
+
 /* ======================================================
  DATEPICKER
-.ui-datepicker {
-    font-family: 'InterDisplayReg', Arial, sans-serif;
-    width: 21em;
-    padding: 1em;
-}
+
 ====================================================== */
 
 .ui-datepicker .ui-widget-header, .ui-widget-content {
