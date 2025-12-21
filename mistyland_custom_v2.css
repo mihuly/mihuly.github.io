@@ -204,6 +204,9 @@ body {
 .b-result-item__services-item-tooltip {
     background-color: #ffffff3d;
 }
+.price-variants .variant:hover {
+    background-color: #F9E284;
+}
 
 /* ======================================================
  ORDER SCREEN
