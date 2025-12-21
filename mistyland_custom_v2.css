@@ -261,7 +261,7 @@ body {
 }
 
 .price {
-   font-family: 'InterDisplay', Arial, sans-serif;
+  font-family: 'InterDisplay', Arial, sans-serif !important;
   letter-spacing: 0.01em;
 }
 
