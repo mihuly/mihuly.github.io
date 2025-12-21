@@ -107,7 +107,7 @@ font-display: swap;
 .b-select-ghost-content {
   font-family: 'InterDisplayReg', Arial, sans-serif;
   letter-spacing: 0.03em;
-  font-size: 0.8em;
+  font-size: 1em;
   color: #4B463B;
 }
 
@@ -124,6 +124,9 @@ font-display: swap;
 }
 ====================================================== */
 
+.ui-datepicker .ui-widget-header, .ui-widget-content {
+    background-color: #F7F1DF;
+}
 
 
 /* ======================================================
