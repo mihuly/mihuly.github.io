@@ -276,6 +276,10 @@ body {
 .step-icon {
   opacity: 0.9;
 }
+.b-cart__content {
+  background-color: #FF895C; 
+  color: #4B463B;
+}
 
 /* ======================================================
   4. ICONS & IMAGES (локальные файлы)
