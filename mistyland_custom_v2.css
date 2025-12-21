@@ -179,9 +179,11 @@ font-display: swap;
 ====================================================== */
 
 .l-main-container {
-  background-color: #F7F1DF; !important;
+  background-color: #F7F1DF; 
 }
-
+.b-mob-top-bar__inner {
+  background-color: #F7F1DF;
+}
 
 /* ======================================================
  ORDER SCREEN
