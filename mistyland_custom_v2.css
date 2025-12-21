@@ -104,6 +104,10 @@ font-display: swap;
   background-color: #F7F1DF;
 }
 
+.b-input-spinner input {
+  background-color: #F5F5F5;
+}
+
 .b-select-ghost-content {
   font-family: 'InterDisplayReg', Arial, sans-serif;
   letter-spacing: 0.03em;
@@ -116,19 +120,28 @@ font-display: swap;
 }
 
 .s-btn--addroom {
+  padding-top: 0.5em;
    font-size: 1em;
+  padding-bottom: 1em;
+}
+.s-btn--ready {
+ padding-top: 0.5em;
+  margin-top: 0em;
+  padding-bottom: 1em;
 }
 
 .l-popup-container {
   background-color: #F7F1DF;
 }
-
+/* 
 .b-roomitem__field--btn {
   padding-top: 0.5em;
-}
+} */
 
 .icon-plus, .icon-plus-span {
     background-image: url(./icon-plus.svg);
+      background-size: contain;
+    background-position: center;
 }
 
 .icon-minus {
@@ -137,14 +150,26 @@ font-display: swap;
 
 .icon-close2 {
     background-image: url(./icon-close2.svg);
+}
+
+.icon-guest {
+    background-image: url(./guest.png);
+     background-size: contain;
+    background-position: center;
+}
+
+ .select2-container .select2-results__option--highlighted.select2-results__option--selectable {
+        background-color: #F9E284;
+        color: #4B463B;
+    }
 
 /* ======================================================
  DATEPICKER
 
 ====================================================== */
 
-.ui-datepicker .ui-widget-header, .ui-widget-content {
-    background-color: #F7F1DF;
+.ui-datepicker, .ui-datepicker .ui-widget-header, .ui-widget-content {
+  background-color: #F7F1DF;
   color: #4B463B;
 }
 
