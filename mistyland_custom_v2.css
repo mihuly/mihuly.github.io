@@ -192,24 +192,16 @@ font-display: swap;
   color: #000000 !important; /* если есть текст */
 }
 
-/* === LOADER SPINNER === */
-.scw-loader-icon {
-  border-color: #000000 !important;
-  border-bottom-color: transparent !important;
-}
-
-/* === MAIN WIDGET BACKGROUND === */
-.scw-layout,
-.scw-app,
-.scw-content,
-.scw-results {
-  background: #000000 !important;
-}
-
-/* === SIDEBAR (LEFT COLUMN) === */
-.scw-sidebar {
-  background: #000000 !important;
-}
+/* === LOADER SPINNER === */   
+                                 .scw-loader {
+                                      background: black !important;
+                                      color: #356B9D ;
+                                    }
+                                    .scw-loader-icon {
+                                      border: 5px solid white !important;
+                                    }
+                                             
+                            
 
 /* ======================================================
  ORDER SCREEN
