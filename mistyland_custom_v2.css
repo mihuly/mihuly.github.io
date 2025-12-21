@@ -250,6 +250,12 @@ body {
   background-color: #F7F1DF;
 }
 
+.b-price-item__title {
+  font-size: 1.5em; 
+   font-family: 'InterDisplay', Arial, sans-serif;
+  letter-spacing: 0.01em;
+}
+
 
 /* ======================================================
   4. ICONS & IMAGES (локальные файлы)
