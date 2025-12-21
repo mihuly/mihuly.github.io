@@ -216,6 +216,13 @@ body {
   margin-left: -0.5em;
 }
 
+.b-mob-bottom-bar {
+ background-color: #F9E284;
+}
+.b-mob-bottom-bar .s-btn { 
+  color: #FF895C;
+}
+
 /* ======================================================
  ORDER SCREEN
 ====================================================== */
