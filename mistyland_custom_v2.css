@@ -226,6 +226,12 @@ body {
   color: #4B463B;
 }
 
+.b-filter__title {
+  font-size: 1.5em; 
+   font-family: 'InterDisplay', Arial, sans-serif;
+  letter-spacing: 0.01em;
+}
+
 .b-result-item__name {
     font-size: 2em;
      font-family: 'InterDisplay', Arial, sans-serif;
