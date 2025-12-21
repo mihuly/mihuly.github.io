@@ -12,6 +12,12 @@
 
 /* ======================================================
   2. FONT — INTER VARIABLE (локально)
+body {
+    font-family: 'InterDisplay', Arial, sans-serif;
+    font-size: 1em;
+    color: #4B463B;
+  letter-spacing: 0.01em;
+}
 ====================================================== */
 
 @font-face {
@@ -30,11 +36,7 @@ font-style: normal;
 font-display: swap;
 }
 
-body {
-    font-family: 'InterDisplay', Arial, sans-serif;
-    font-size: 1em;
-    color: #4B463B;
-}
+
 
 
 /* ======================================================
@@ -43,6 +45,9 @@ body {
 
 .b-start__field-label {
     font-size: 1em;
+  font-family: 'InterDisplayReg', Arial, sans-serif;
+  letter-spacing: 0.03em;
+  color: #4B463B;
 }
 
 .s-btn,
@@ -59,6 +64,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.01em;
   text-transform: none;
+  color: #4B463B;
 
   border: none;
   cursor: pointer;
@@ -88,19 +94,33 @@ body {
    background-size: contain;      /* или 100% 100% */
   background-position: center;
   background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
    
 }
 
+.b-select-ghost {
+    border: none;
+  background-color: #F7F1DF;
+}
+
+.b-select-ghost-content {
+  font-family: 'InterDisplayReg', Arial, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 0.8em;
+  color: #4B463B;
+}
 
 /* ======================================================
  DATEPICKER
-====================================================== */
-
 .ui-datepicker {
     font-family: 'InterDisplayReg', Arial, sans-serif;
     width: 21em;
     padding: 1em;
 }
+====================================================== */
+
+
 
 /* ======================================================
   ROOMS
