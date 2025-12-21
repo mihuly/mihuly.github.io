@@ -179,23 +179,9 @@ font-display: swap;
 ====================================================== */
 
 .l-main-container {
-  background-color: black; !important;
+  background-color: #F7F1DF; !important;
 }
 
-/* ===============================
-   FD24 — BLACK THEME (STEP 1)
-   =============================== */
-
-/* === LOADER SPINNER === */   
-                                 .scw-loader {
-                                      background: black !important;
-                                      color: #356B9D ;
-                                    }
-                                    .scw-loader-icon {
-                                      border: 5px solid white !important;
-                                    }
-                                             
-                            
 
 /* ======================================================
  ORDER SCREEN
