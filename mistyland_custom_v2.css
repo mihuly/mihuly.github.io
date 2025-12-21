@@ -12,12 +12,7 @@
 
 /* ======================================================
   2. FONT — INTER VARIABLE (локально)
-body {
-    font-family: 'InterDisplay', Arial, sans-serif;
-    font-size: 1em;
-    color: #4B463B;
-  letter-spacing: 0.01em;
-}
+
 ====================================================== */
 
 @font-face {
@@ -36,7 +31,10 @@ font-style: normal;
 font-display: swap;
 }
 
-
+body {
+    
+    color: #4B463B;
+}
 
 
 /* ======================================================
