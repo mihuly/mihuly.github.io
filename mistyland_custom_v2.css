@@ -72,6 +72,10 @@ body {
   cursor: pointer;
   white-space: nowrap;
 }
+.s-btn s-btn--primary {
+  font-size: 2.2em;
+}
+
 
 .s-btn::after,
 .b-result-item__view-more-btn::after {
