@@ -184,6 +184,9 @@ font-display: swap;
 .b-mob-top-bar__inner {
   background-color: #F7F1DF;
 }
+.b-result-item {
+   background-color: #F7F1DF;
+}
 
 /* ======================================================
  ORDER SCREEN
