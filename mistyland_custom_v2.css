@@ -32,7 +32,8 @@ font-display: swap;
 }
 
 body {
-    
+      font-family: 'InterDisplayReg', Arial, sans-serif;
+  letter-spacing: 0.03em;
     color: #4B463B;
 }
 
