@@ -213,7 +213,7 @@ body {
 }
 
 .price.grid-cell span:last-child {
-  margin-left: -1em;
+  margin-left: -0.5em;
 }
 
 /* ======================================================
