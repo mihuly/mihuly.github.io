@@ -186,12 +186,6 @@ font-display: swap;
    FD24 — BLACK THEME (STEP 1)
    =============================== */
 
-/* === LOADER BACKGROUND === */
-.scw-loader {
-  background: #000000 !important;
-  color: #000000 !important; /* если есть текст */
-}
-
 /* === LOADER SPINNER === */   
                                  .scw-loader {
                                       background: black !important;
