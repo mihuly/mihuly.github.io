@@ -250,6 +250,7 @@ body {
 
    .b-result-item__title {
         background: #F7F1DF;
+    color: #4B463B;
    }
 
 .long-text.truncated::after {
@@ -279,6 +280,7 @@ body {
 .grid-row .price.grid-cell {
   margin-bottom: 6px;
 }
+
 
 /* ======================================================
  ORDER SCREEN
