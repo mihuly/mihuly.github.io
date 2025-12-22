@@ -287,6 +287,11 @@ body {
   margin-bottom: 6px;
 }
 
+   .long-text.truncated.expanded:after {
+        transform: rotate( -180deg );
+    }
+
+
 
 /* ======================================================
  ORDER SCREEN
