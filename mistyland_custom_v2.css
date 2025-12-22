@@ -235,7 +235,7 @@ body {
   color: #4B463B;
 }
 
-.b-filter__title {
+.b-filter__title, .b-roomitem__title {
   font-size: 1.5em; 
    font-family: 'InterDisplay', Arial, sans-serif;
   letter-spacing: 0.01em;
