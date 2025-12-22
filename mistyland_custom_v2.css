@@ -269,22 +269,21 @@ body {
         transform: rotate(-180deg);
     }
 
-/* Делаем grid-row flex */
+.grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .grid-row {
-  display: flex;
-  align-items: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
 }
 
-/* Последняя колонка — вертикальная */
-.grid-row .grid-cell:last-child {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-/* Цена — отступ снизу */
-.grid-row .price.grid-cell {
-  margin-bottom: 6px;
+.grid-cell {
+    display: flex;
+    align-items: center;
 }
 
    .long-text.truncated.expanded:after {
