@@ -246,9 +246,7 @@ body {
  opacity: 0.8;
 }
 
-.b-result-item__title {
-  background-color: #F7F1DF;
-}
+
 .long-text.truncated:after {
     content: '⌃';
 }
