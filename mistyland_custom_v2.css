@@ -376,10 +376,10 @@ body {
 .b-price-item__title:before {
     content: '';
     position: absolute;
-    width: 1em;
-    height: 1em;
-    left: -22px;
-    top: 4px;
+    width: 0.2em;
+    height: 0.2em;
+    left: -0.8em;
+    top: 0.25em;
     background: #AC9877;
     border-radius: 50%;
 }
