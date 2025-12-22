@@ -257,6 +257,24 @@ body {
   transform: rotate( 135deg );
 }
 
+/* Делаем строку flex-контейнером */
+.grid-row {
+  display: flex;
+  align-items: center;
+}
+
+/* Колонка с ценой становится вертикальной */
+.grid-row .price.grid-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Кнопку "подтягиваем" под цену */
+.grid-row .price.grid-cell + .grid-cell {
+  margin-top: 6px;
+}
+
 /* ======================================================
  ORDER SCREEN
 ====================================================== */
