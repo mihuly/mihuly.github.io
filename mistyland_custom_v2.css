@@ -261,7 +261,13 @@ body {
 .js-simple-spoiler__trigger::after {
      content: '⌃';
   transform: rotate( 180deg );
+  margin-bottom: 0.4em;
+    margin-left: 1em;
 }
+
+ .b-tariff-description__text-holder.state-active .b-tariff-description__title:after {
+        transform: rotate(-180deg);
+    }
 
 /* Делаем grid-row flex */
 .grid-row {
