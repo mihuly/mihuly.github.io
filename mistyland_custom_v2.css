@@ -190,9 +190,7 @@ body {
   ROOMS
 ====================================================== */
 
-.b-mob-top-bar__inner {
-  box-shadow: none;
-}
+* { box-shadow: none !important; }
 
 .l-main-container {
   background-color: #F7F1DF; 
