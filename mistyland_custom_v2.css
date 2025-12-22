@@ -242,7 +242,7 @@ body {
 }
 
 .b-result-item__name {
-    font-size: 2em;
+    font-size: 3em;
      font-family: 'InterDisplay', Arial, sans-serif;
   letter-spacing: 0.01em;
  opacity: 0.8;
@@ -290,6 +290,10 @@ body {
    .long-text.truncated.expanded:after {
         transform: rotate( -180deg );
     }
+
+.b-roomitem__field--btn {
+  border-top: none;
+}
 
 
 
