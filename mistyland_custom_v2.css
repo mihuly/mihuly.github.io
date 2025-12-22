@@ -249,12 +249,12 @@ body {
 
 .long-text.truncated::after {
     content: '⌃';
-  transform: rotate( 135deg );
+  transform: rotate( 180deg );
 }
 
-.b-tariff-description::after {
+.js-simple-spoiler::after {
      content: '⌃';
-  transform: rotate( 135deg );
+  transform: rotate( 180deg );
 }
 
 /* Делаем строку flex-контейнером */
