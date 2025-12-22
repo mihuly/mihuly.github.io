@@ -51,6 +51,13 @@ body {
   letter-spacing: 0.03em;
   color: #4B463B;
 }
+.b-result-item__view-more-btn {
+   font-size: 1.3em;
+}
+.b-result-item__view-more-btn::after {
+ 
+  margin-left: 0.15em;
+}
 
 .s-btn,
 .b-result-item__view-more-btn {
