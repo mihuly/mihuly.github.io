@@ -96,8 +96,8 @@ body {
   font-size: 2.2em !important;
 }
 
-.b-result-item__view-more-btn {
-   font-size: 1.3em;
+.s-btn s-btn--primary s-btn-book {
+  font-size: 1.3em;
 }
 
 .b-start {
