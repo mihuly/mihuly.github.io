@@ -51,9 +51,7 @@ body {
   letter-spacing: 0.03em;
   color: #4B463B;
 }
-.b-result-item__view-more-btn {
-   font-size: 1.3em;
-}
+
 .b-result-item__view-more-btn::after {
  
   margin-left: 0.15em;
@@ -78,9 +76,7 @@ body {
   cursor: pointer;
   white-space: nowrap;
 }
-.s-btn s-btn--primary {
-  font-size: 2.2em !important;
-}
+
 
 
 .s-btn::after,
@@ -94,6 +90,14 @@ body {
 .s-btn:hover,
 .b-result-item__view-more-btn:hover {
   opacity: 0.6;
+}
+
+.s-btn {
+  font-size: 2.2em !important;
+}
+
+.b-result-item__view-more-btn {
+   font-size: 1.3em;
 }
 
 .b-start {
