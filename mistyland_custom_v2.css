@@ -257,22 +257,22 @@ body {
   transform: rotate( 180deg );
 }
 
-/* Делаем строку flex-контейнером */
+/* Делаем grid-row flex */
 .grid-row {
   display: flex;
   align-items: center;
 }
 
-/* Колонка с ценой становится вертикальной */
-.grid-row .price.grid-cell {
+/* Последняя колонка — вертикальная */
+.grid-row .grid-cell:last-child {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-/* Кнопку "подтягиваем" под цену */
-.grid-row .price.grid-cell + .grid-cell {
-  margin-top: 6px;
+/* Цена — отступ снизу */
+.grid-row .price.grid-cell {
+  margin-bottom: 6px;
 }
 
 /* ======================================================
