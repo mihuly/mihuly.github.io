@@ -247,8 +247,14 @@ body {
 }
 
 
-.long-text.truncated:after {
+.long-text.truncated::after {
     content: '⌃';
+  transform: rotate( 135deg );
+}
+
+.b-tariff-description::after {
+     content: '⌃';
+  transform: rotate( 135deg );
 }
 
 /* ======================================================
