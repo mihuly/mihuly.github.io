@@ -259,6 +259,10 @@ body {
         background: #F7F1DF;
     color: #4B463B;
    }
+  .b-result-item__main-option {
+   color: #4B463B;
+    }
+
 
 .long-text.truncated::after {
     content: '⌃';
@@ -285,7 +289,7 @@ body {
   border-top: none;
 }
 
-
+  
 
 /* ======================================================
  ORDER SCREEN
@@ -350,6 +354,10 @@ body {
 
 .l-panel2__title-icon { 
    background-color: #F9E284;
+}
+
+.l-progress.state-step-2 {
+  background-image: none;
 }
 
 /* ======================================================
