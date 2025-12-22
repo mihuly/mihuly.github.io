@@ -276,22 +276,6 @@ body {
         transform: rotate(-180deg);
     }
 
-.grid {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.grid-row {
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
-.grid-cell {
-    display: flex;
-    align-items: center;
-}
 
    .long-text.truncated.expanded:after {
         transform: rotate( -180deg );
