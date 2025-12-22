@@ -310,6 +310,10 @@ body {
  ORDER SCREEN
 ====================================================== */
 
+.js-combobox-trigger {
+    padding-right: 32px;
+}
+
 .state-mob-panel-cart {
   background-color: #F7F1DF;
 }
