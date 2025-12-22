@@ -369,6 +369,17 @@ body {
   background-image: none;
 }
 
+.b-price-item__title:before {
+    content: '';
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    left: -22px;
+    top: 4px;
+    background: #F9E284;
+    border-radius: 50%;
+}
+
 /* ======================================================
   4. ICONS & IMAGES (локальные файлы)
 ====================================================== */
