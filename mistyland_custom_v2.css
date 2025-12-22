@@ -245,7 +245,7 @@ body {
     font-size: 3em;
      font-family: 'InterDisplay', Arial, sans-serif;
   letter-spacing: 0.01em;
- opacity: 0.8;
+  color: #4B463B;
 }
 
    .b-result-item__title {
