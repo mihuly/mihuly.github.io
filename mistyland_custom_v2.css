@@ -257,7 +257,7 @@ body {
   transform: rotate( 180deg );
 }
 
-.js-simple-spoiler::after {
+.js-simple-spoiler__trigger::after {
      content: '⌃';
   transform: rotate( 180deg );
 }
