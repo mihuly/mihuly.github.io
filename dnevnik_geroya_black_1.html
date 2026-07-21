@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -179,20 +180,24 @@ input::placeholder,textarea::placeholder{color:#c4c1bb;}
 .step-body{display:none;padding:6px 20px 26px;border-top:1px dotted var(--dot);}
 .step.open .step-body{display:block;}
 .step-del{
-  display:block;margin:18px 0 0 auto;
-  background:none;border:none;font-family:var(--font);font-size:.7rem;
-  letter-spacing:.03em;text-transform:uppercase;color:var(--ink2);cursor:pointer;
+  display:flex;align-items:center;width:max-content;margin:20px 0 0 auto;
+  font-family:var(--font);font-size:.74rem;letter-spacing:.02em;
+  background:none;border:1px solid var(--line);color:var(--ink2);
+  padding:8px 16px;border-radius:999px;cursor:pointer;transition:all .2s;
 }
+.step-del:hover{border-color:var(--accent);color:var(--accent);}
 .step-del:hover{color:var(--accent);}
 .add-big{
-  width:100%;padding:20px;border:1px dashed var(--dot);background:none;
-  font-family:var(--font);font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;
-  color:var(--ink2);cursor:pointer;transition:all .2s;
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--font);font-size:.82rem;letter-spacing:.02em;
+  background:none;border:1px solid var(--ink);color:var(--ink);
+  padding:12px 22px;border-radius:999px;cursor:pointer;transition:all .2s;
 }
+.add-big:hover{background:var(--ink);color:#fff;}
 .add-big:hover{border-color:var(--ink);color:var(--ink);}
 
 /* ---------- Действия ---------- */
-.action-row{display:flex;align-items:flex-end;gap:12px;margin-bottom:10px;}
+.action-row{display:flex;align-items:center;gap:12px;margin-bottom:10px;}
 .action-row input{flex:1;}
 .vx{display:flex;gap:6px;}
 .vx button{
@@ -202,13 +207,16 @@ input::placeholder,textarea::placeholder{color:#c4c1bb;}
 }
 .vx button.sel-v{border:2px solid var(--ink);color:var(--ink);font-weight:500;}
 .vx button.sel-x{border:2px solid var(--accent);color:var(--accent);font-weight:500;}
-.action-del{background:none;border:none;color:var(--ink2);cursor:pointer;font-size:1rem;padding:0 2px 6px;}
+.action-del{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:none;color:var(--ink2);cursor:pointer;font-size:1rem;line-height:1;display:inline-flex;align-items:center;justify-content:center;transition:all .15s;flex:none;}
+.action-del:hover{border-color:var(--accent);color:var(--accent);}
 .action-del:hover{color:var(--accent);}
 .mini-add{
-  background:none;border:none;font-family:var(--font);font-size:.72rem;
-  letter-spacing:.03em;text-transform:uppercase;color:var(--ink2);
-  cursor:pointer;padding:6px 0;
+  display:inline-flex;align-items:center;margin-top:12px;
+  font-family:var(--font);font-size:.76rem;letter-spacing:.02em;
+  background:none;border:1px solid var(--line);color:var(--ink2);
+  padding:8px 15px;border-radius:999px;cursor:pointer;transition:all .2s;
 }
+.mini-add:hover{border-color:var(--ink);color:var(--ink);}
 .mini-add:hover{color:var(--ink);}
 
 /* ---------- Модал: карта чувств ---------- */
@@ -255,14 +263,18 @@ input::placeholder,textarea::placeholder{color:#c4c1bb;}
   display:flex;gap:10px;border-top:1px solid var(--line);background:var(--bg);
 }
 .btn-primary{
-  flex:1;font-family:var(--font);font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;
-  background:var(--ink);color:#fff;border:none;padding:15px;cursor:pointer;
+  flex:1;font-family:var(--font);font-size:.84rem;letter-spacing:.02em;
+  background:var(--ink);color:#fff;border:none;padding:14px;border-radius:999px;
+  cursor:pointer;transition:opacity .2s;
 }
+.btn-primary:hover:not(:disabled){opacity:.85;}
 .btn-primary:disabled{background:var(--line);color:var(--ink2);cursor:default;}
 .btn-cancel{
-  font-family:var(--font);font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;
-  background:none;border:1px solid var(--line);padding:15px 20px;cursor:pointer;color:var(--ink);
+  font-family:var(--font);font-size:.84rem;letter-spacing:.02em;
+  background:none;border:1px solid var(--line);padding:14px 22px;border-radius:999px;
+  cursor:pointer;color:var(--ink);transition:border-color .2s;
 }
+.btn-cancel:hover{border-color:var(--ink);}
 
 
 /* ---------- Колесо баланса ---------- */
@@ -429,7 +441,7 @@ body.revealed .wrap{opacity:1;transition:opacity .7s ease;}
 
 <header>
   <div class="brand">Дневник <span>Героя</span></div>
-  <div class="brand-sub">Трансформационная игра «Путь Героя» · Алла Филина</div>
+  <div class="brand-sub">Трансформационная Игра «Путь Героя» · Алла Филина</div>
   <div class="topbar">
     <div class="save-note" id="saveNote">автосохранение включено</div>
     <div class="io">
@@ -472,15 +484,15 @@ body.revealed .wrap{opacity:1;transition:opacity .7s ease;}
 
 <!-- ================= ЗАПРОС ================= -->
 <section id="s-request">
-  <h2>Куда ты идёшь? <span class="grey">Какой у тебя запрос на игру?</span></h2>
-  <p class="lead">Пространство этой страницы — твой ориентир по игре, ты много раз будешь сюда возвращаться. В ходе игры ты будешь уточнять формулировки, переписывать запросы. Что‑то будет сбываться в дороге, что‑то возникать. Это живое место, как и вся игра.</p>
+  <h2>Куда ты идёшь? <span class="grey">Какой у тебя запрос на Игру?</span></h2>
+  <p class="lead">Пространство этой страницы — твой ориентир по Игре, ты много раз будешь сюда возвращаться. В ходе Игры ты будешь уточнять формулировки, переписывать запросы. Что‑то будет сбываться в дороге, что‑то возникать. Это живое место, как и вся Игра.</p>
   <div class="note">Позволь своему уму не вмешиваться в работу твоего сердца. Здесь всегда можно всё исправить, переделать, переписать. Здесь (как и в жизни) нет ничего, что нельзя изменить, пока ты жив.</div>
 
   <div class="wheel-block">
     <h3 class="sub">Сферы жизни в начале пути</h3>
     <p class="lead" style="margin-bottom:22px">Оцени каждую сферу от 1 до 10 — насколько ты доволен ею прямо сейчас. Это точка отсчёта. Позже ты вернёшься и увидишь, как изменилась картина.</p>
     <div class="wheel-wrap">
-      <svg id="wheelSvg" viewBox="0 0 320 320" class="wheel"></svg>
+      <svg id="wheelSvg" viewBox="-56 0 432 320" class="wheel"></svg>
       <div id="wheelSliders" class="wheel-sliders"></div>
     </div>
   </div>
@@ -493,24 +505,24 @@ body.revealed .wrap{opacity:1;transition:opacity .7s ease;}
 
 <!-- ================= ШАГИ ================= -->
 <section id="s-steps">
-  <h2>Заметки <span class="grey">о шагах</span></h2>
-  <p class="lead">Каждый раз, когда в игре начинается новый шаг, — открывай новую карточку. Кто‑то пишет много, кто‑то пару слов. Мы все очень разные.</p>
+  <h2>Заметки <span class="grey">о Шагах</span></h2>
+  <p class="lead">Каждый раз, когда в Игре начинается новый Шаг, — открывай новую карточку. Кто‑то пишет много, кто‑то пару слов. Мы все очень разные.</p>
   <div id="stepsList"></div>
-  <button class="add-big" id="btnAddStep">+ Новый шаг</button>
+  <button class="add-big" id="btnAddStep">+ Новый Шаг</button>
 </section>
 
 <!-- ================= ЗАВЕРШЕНИЕ ================= -->
 <section id="s-finish">
-  <h2>Итоги <span class="grey">игры</span></h2>
+  <h2>Итоги <span class="grey">Игры</span></h2>
   <div class="doc">
-    <p class="quote">Герой, я поздравляю тебя с завершением игры. Хотя я, как автор, убеждена, что не пройти её невозможно. Ровно как и невозможно её закончить. Игра — это навсегда.</p>
-    <p>Я буду рада приветствовать тебя во Вселенной уже как резидента — Героя, прошедшего игру. Это бесплатное пространство для тех, кто прошёл игру, кто хочет продолжения, кто знает, что игра — это только начало.</p>
+    <p class="quote">Герой, я поздравляю тебя с завершением Игры. Хотя я, как автор, убеждена, что не пройти её невозможно. Ровно как и невозможно её закончить. Игра — это навсегда.</p>
+    <p>Я буду рада приветствовать тебя во Вселенной уже как резидента — Героя, прошедшего Игру. Это бесплатное пространство для тех, кто прошёл Игру, кто хочет продолжения, кто знает, что Игра — это только начало.</p>
   </div>
   <div class="wheel-block" style="margin-top:34px">
     <h3 class="sub">Сферы жизни в конце пути</h3>
     <p class="lead" style="margin-bottom:22px">Оцени каждую сферу заново — какой ты видишь её сейчас. Твой новый контур ляжет поверх того, что было в начале. Так виден пройденный путь.</p>
     <div class="wheel-wrap">
-      <svg id="wheelSvgEnd" viewBox="0 0 320 320" class="wheel"></svg>
+      <svg id="wheelSvgEnd" viewBox="-56 0 432 320" class="wheel"></svg>
       <div id="wheelSlidersEnd" class="wheel-sliders"></div>
     </div>
     <div class="wheel-legend">
@@ -521,12 +533,12 @@ body.revealed .wrap{opacity:1;transition:opacity .7s ease;}
   </div>
 
   <div class="field" style="margin-top:34px">
-    <label>Мои итоги игры</label>
-    <textarea data-k="finish" rows="8" placeholder="Что изменилось? Каким ты вышел из игры?"></textarea>
+    <label>Мои итоги Игры</label>
+    <textarea data-k="finish" rows="8" placeholder="Что изменилось? Каким ты вышел из Игры?"></textarea>
   </div>
   <div style="margin-top:26px">
     <a class="link-btn" href="#" data-link="review" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg>Оставить отзыв</a>
-    <a class="link-btn" href="#" data-link="next" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12a8 8 0 1 1 2.3 5.6M4 12V7M4 12h5"/></svg>Новая игра</a>
+    <a class="link-btn" href="#" data-link="next" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12a8 8 0 1 1 2.3 5.6M4 12V7M4 12h5"/></svg>Новая Игра</a>
   </div>
   <p class="lead" style="margin-top:26px">Игра «Путь Героя» проходит раз в год. До встречи, Герой. Мы теперь из одной песочницы ;)</p>
 </section>
@@ -539,13 +551,13 @@ body.revealed .wrap{opacity:1;transition:opacity .7s ease;}
     <p>Ведение дневника не предполагает длинных писем и заполнения всех строк. Это твоё пространство. Если тебе не хочется писать — это твоё право. Хочется — отлично.</p>
     <p class="quote">Дневник — это зеркало твоего внутреннего пространства. И только тебе одному известно, каким он должен быть.</p>
     <p>Если ты будешь его вести, даже уделяя пару минут в день, ты будешь бесконечно благодарен себе: какие‑то вещи можно осознать только со временем.</p>
-    <p><b>Подсказка:</b> если вдруг тебе не хочется заполнять дневник… тем более заполняй. В игре всё поймёшь.</p>
+    <p><b>Подсказка:</b> если вдруг тебе не хочется заполнять дневник… тем более заполняй. В Игре всё поймёшь.</p>
 
-    <h3>Как устроена карточка шага</h3>
+    <h3>Как устроена карточка Шага</h3>
     <ul>
-      <li><b>Шаг и дата</b> — название шага, в который играешь, и дата начала.</li>
+      <li><b>Шаг и дата</b> — название Шага, в который играешь, и дата начала.</li>
       <li><b>Состояние</b> — оценка по 10‑балльной шкале, где 1 — очень плохо, 10 — великолепно. Плюс пара слов о состоянии и теги чувств.</li>
-      <li><b>Инсайты и мысли</b> — что открылось тебе во время прохождения шага.</li>
+      <li><b>Инсайты и мысли</b> — что открылось тебе во время прохождения Шага.</li>
       <li><b>События</b> — обязательно фиксируй, что происходит в жизни на уровне событий. Эти заметки станут ориентирами на карте твоей жизни.</li>
       <li><b>Изменения и решения</b> — что изменилось в тебе и какие решения ты принял.</li>
       <li><b>Действия</b> — что ты сделаешь, чтобы подтвердить решение. Выполнено — V, нет — X.</li>
@@ -553,12 +565,12 @@ body.revealed .wrap{opacity:1;transition:opacity .7s ease;}
 
     <h3>Кто тебе помогает играть?</h3>
     <ul>
-      <li><b>Автор и ведущий</b> — записывай вопросы и не спеши их задавать: по ходу игры ответы будут приходить сами.</li>
+      <li><b>Автор и ведущий</b> — записывай вопросы и не спеши их задавать: по ходу Игры ответы будут приходить сами.</li>
       <li><b>Кураторы</b> — им всегда можно задать вопрос в рабочие часы.</li>
       <li><b>Другие игроки</b> — мы играем в общем поле. Слушай вопросы других на эфирах: там будут и твои ответы.</li>
-      <li><b>Волшебники</b> — профессионалы программы «Костюм Мастера». Если твоё состояние 0–4, присмотрись и сходи на сессию. Внутри каждого шага есть кнопка <b>«Вызвать волшебника»</b> — нажми, когда почувствуешь, что нужна поддержка.</li>
+      <li><b>Волшебники</b> — профессионалы программы «Костюм Мастера». Если твоё состояние 0–4, присмотрись и сходи на сессию. Внутри каждого Шага есть кнопка <b>«Вызвать волшебника»</b> — нажми, когда почувствуешь, что нужна поддержка.</li>
       <li><b>Друг</b> — игрок, с которым можно проходить путь вместе и поддерживать друг друга.</li>
-      <li><b>Специалисты за пределами игры</b> — ты взрослый человек: если нужна помощь, не пренебрегай помощью профессионалов.</li>
+      <li><b>Специалисты за пределами Игры</b> — ты взрослый человек: если нужна помощь, не пренебрегай помощью профессионалов.</li>
     </ul>
     <p class="quote">Игра для всех проходит по‑разному. Это нормально. Мы все очень разные, и мы пришли сюда обрести счастье.</p>
   </div>
@@ -865,7 +877,7 @@ function stepCard(st,i){
     +'</div>'
     +'<div class="step-body">'
       +'<div class="row2" style="margin-top:16px">'
-        +'<div class="field"><label>Шаг</label><input type="text" data-f="title" value="'+esc(st.title)+'" placeholder="Название шага…"></div>'
+        +'<div class="field"><label>Шаг</label><input type="text" data-f="title" value="'+esc(st.title)+'" placeholder="Название Шага…"></div>'
         +'<div class="field"><label>Дата</label><input type="date" data-f="date" value="'+esc(st.date)+'"></div>'
       +'</div>'
       +'<div class="field"><label>Оцени состояние</label><div class="scale">'+scoreHtml+'</div></div>'
@@ -875,7 +887,7 @@ function stepCard(st,i){
           +'<button type="button" class="tag-add" data-open><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>Карта чувств</button>'
         +'</div>'
       +'</div>'
-      +'<div class="field"><label>Основные инсайты и мысли к шагу</label><textarea data-f="insights" rows="4">'+esc(st.insights)+'</textarea></div>'
+      +'<div class="field"><label>Основные инсайты и мысли к Шагу</label><textarea data-f="insights" rows="4">'+esc(st.insights)+'</textarea></div>'
       +'<div class="field"><label>События в этот период</label><textarea data-f="events" rows="4">'+esc(st.events)+'</textarea></div>'
       +'<div class="field"><label>Изменения и принятые решения</label><textarea data-f="changes" rows="4">'+esc(st.changes)+'</textarea></div>'
       +'<div class="field"><label>Действия</label>'+actHtml
@@ -887,7 +899,7 @@ function stepCard(st,i){
           +'Вызвать волшебника</a>'
         +'<span class="wizard-hint">если состояние 0–4 — не оставайся один, приходи на сессию</span>'
       +'</div>'
-      +'<button type="button" class="step-del" data-delstep>Удалить шаг</button>'
+      +'<button type="button" class="step-del" data-delstep>Удалить Шаг</button>'
     +'</div>';
 
   /* — события карточки — */
@@ -940,7 +952,7 @@ function stepCard(st,i){
   });
   $("[data-open]",el).addEventListener("click",function(){openSheet(st.id);});
   $("[data-delstep]",el).addEventListener("click",function(){
-    if(confirm("Удалить этот шаг? Действие нельзя отменить."))
+    if(confirm("Удалить этот Шаг? Действие нельзя отменить."))
     {state.steps=state.steps.filter(function(s){return s.id!==st.id;});renderSteps();save();}
   });
   return el;
