@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Гибкость · 7 минут</title>
+<style>
+:root{--bg:#0f0f12;--card:#1a1a20;--line:#2a2a33;--text:#f2f2f5;--mute:#8a8a96;--acc:#ff7a3d;--ok:#4ade80}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;min-height:100vh;padding:20px 16px 48px;max-width:520px;margin:0 auto}
+h1{font-size:22px;margin-bottom:4px}
+.sub{color:var(--mute);font-size:14px;margin-bottom:20px}
+.week{display:flex;gap:6px;margin-bottom:20px}
+.day{flex:1;text-align:center;padding:8px 0;border-radius:10px;background:var(--card);border:1px solid var(--line);font-size:12px;color:var(--mute)}
+.day.done{background:var(--ok);color:#0a0a0a;border-color:var(--ok);font-weight:600}
+.day.min{background:#facc15;color:#0a0a0a;border-color:#facc15;font-weight:600}
+.day.today{border-color:var(--acc)}
+.modes{display:flex;gap:10px;margin-bottom:20px}
+button{font:inherit;cursor:pointer;border:none;border-radius:14px}
+.mode{flex:1;padding:14px;background:var(--card);border:1px solid var(--line);color:var(--text);text-align:left}
+.mode b{display:block;font-size:16px;margin-bottom:2px}
+.mode span{font-size:12px;color:var(--mute)}
+.mode.on{border-color:var(--acc)}
+.list{display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;justify-content:space-between;gap:10px;font-size:15px}
+.item small{color:var(--mute);white-space:nowrap}
+.go{width:100%;padding:18px;background:var(--acc);color:#0a0a0a;font-size:18px;font-weight:700}
+#run{display:none;text-align:center;padding-top:10px}
+.step{color:var(--mute);font-size:13px;margin-bottom:8px}
+.name{font-size:26px;font-weight:700;margin-bottom:10px}
+.time{font-size:72px;font-weight:200;margin:10px 0;font-variant-numeric:tabular-nums}
+.how{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;font-size:15px;line-height:1.5;margin-bottom:16px;text-align:left}
+.bar{height:6px;background:var(--line);border-radius:3px;margin-bottom:16px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--acc);width:0;transition:width .3s}
+.row{display:flex;gap:10px}
+.row button{flex:1;padding:14px;background:var(--card);color:var(--text);border:1px solid var(--line);font-size:15px}
+.done-screen{display:none;text-align:center;padding:60px 0}
+.done-screen h2{font-size:28px;margin-bottom:8px}
+.tip{color:var(--mute);font-size:13px;line-height:1.5;margin-top:24px}
+</style>
+</head>
+<body>
+<div id="home">
+  <h1>Гибкость · 7 минут</h1>
+  <p class="sub">После пробуждения. Не успел — в любой момент до вечера.</p>
+  <div class="week" id="week"></div>
+  <div class="modes">
+    <button class="mode on" id="m-full" onclick="setMode('full')"><b>Полный</b><span>~7 мин · 6 упражнений</span></button>
+    <button class="mode" id="m-min" onclick="setMode('min')"><b>Минимум</b><span>2 мин · плохой день</span></button>
+  </div>
+  <button class="mode on" id="voiceBtn" onclick="toggleVoice()" style="width:100%;margin-bottom:12px"><b>🔊 Голос включён</b><span>Телефон можно положить на пол и не смотреть</span></button>
+  <button class="mode" onclick="testVoice()" style="width:100%;margin-bottom:12px"><b>▶ Проверить голос</b><span id="vstat">Нажми — должен сказать «Кошка, корова»</span></button>
+  <div class="list" id="list"></div>
+  <button class="go" onclick="start()">Начать</button>
+  <p class="tip">Минимум тоже считается днём. Пропуск — только когда сделано ноль. Два нуля подряд не допускаем.</p>
+</div>
+
+<div id="run">
+  <div class="step" id="step"></div>
+  <div class="name" id="name"></div>
+  <div class="time" id="time"></div>
+  <div class="bar"><i id="bar"></i></div>
+  <div class="how" id="how"></div>
+  <div class="row">
+    <button onclick="pauseToggle()" id="pb">Пауза</button>
+    <button onclick="next()">Дальше →</button>
+  </div>
+</div>
+
+<div class="done-screen" id="fin">
+  <h2>Готово ✓</h2>
+  <p class="sub" id="finMsg"></p>
+  <button class="go" onclick="location.reload()">На главную</button>
+</div>
+
+<script>
+var FULL=[
+ {n:"Кошка-корова",v:"Кошка-корова",t:60,h:"На четвереньках. Выдох — спина дугой вверх, голова вниз. Вдох — прогиб вниз, голова вверх. Медленно, позвонок за позвонком."},
+ {n:"Грудные в проёме",v:"Грудные в проёме",t:60,h:"Руки на косяки двери на уровне плеч. Шаг вперёд, корпус чуть вперёд. Растяжение в груди и передних дельтах. Дыши ровно."},
+ {n:"Ангел на стене",v:"Ангел на стене",t:60,h:"Спиной к стене: пятки, таз, лопатки, затылок касаются. Руки W → Y, не отрывая от стены. 10 медленных повторений."},
+ {n:"Глубокий выпад · левая",v:"Выпад, левая нога",t:60,h:"Передняя нога 90°, задняя на колене. Таз вниз, корпус прямой. Растяжение в паху задней ноги.",sw:1},
+ {n:"Глубокий выпад · правая",v:"Выпад, правая нога",t:60,h:"Смени ногу. Таз вниз, корпус прямой, руки можно вверх для усиления."},
+ {n:"Мост",v:"Мост",t:60,h:"Лёжа, ладони у плеч пальцами к плечам. Толкнись вверх, выпрями руки. 30 сек держишь, 10 сек отдых, ещё 30 сек."},
+ {n:"Наклон вперёд стоя",v:"Наклон вперёд",t:60,h:"Ноги вместе или чуть шире плеч. Расслабь шею и голову, вис вниз. С каждым выдохом чуть глубже, без рывков."}
+];
+var MIN=[FULL[2],FULL[1]];
+var mode='full',seq=[],i=0,left=0,paused=false,timer=null;
+
+var voiceOn=true,wake=null;
+var VOICES=[];
+function loadVoices(){try{VOICES=speechSynthesis.getVoices()||[]}catch(e){}}
+if(window.speechSynthesis){loadVoices();speechSynthesis.onvoiceschanged=loadVoices}
+function say(t){
+  if(!voiceOn||!window.speechSynthesis)return;
+  try{
+    speechSynthesis.cancel();speechSynthesis.resume();
+    var u=new SpeechSynthesisUtterance(t);u.lang='ru-RU';u.rate=0.9;u.volume=1;
+    var v=VOICES.filter(function(x){return x.lang&&x.lang.toLowerCase().replace('_','-').indexOf('ru')==0})[0];
+    if(v)u.voice=v;
+    setTimeout(function(){speechSynthesis.speak(u)},60);
+  }catch(e){}
+}
+function beep(f,d){
+  if(!voiceOn)return;
+  try{
+    var C=window.AudioContext||window.webkitAudioContext;if(!C)return;
+    window._ac=window._ac||new C();
+    var o=_ac.createOscillator(),g=_ac.createGain();
+    o.frequency.value=f;g.gain.value=0.15;o.connect(g);g.connect(_ac.destination);
+    o.start();o.stop(_ac.currentTime+d);
+  }catch(e){}
+}
+function testVoice(){
+  var st=document.getElementById('vstat');
+  if(!window.speechSynthesis){st.textContent='Голос не поддерживается в этом окне — открой файл в Chrome или Safari';return}
+  var ru=VOICES.filter(function(x){return x.lang&&x.lang.toLowerCase().indexOf('ru')==0}).length;
+  st.textContent=ru?'Русских голосов: '+ru+'. Если тишина — прибавь громкость и выключи беззвучный режим':'Русский голос не найден — установи его в настройках телефона (озвучка текста)';
+  var was=voiceOn;voiceOn=true;say('Кошка. Корова.');voiceOn=was;beep(660,0.15);
+}
+function toggleVoice(){
+  voiceOn=!voiceOn;
+  var b=document.getElementById('voiceBtn');
+  b.className='mode'+(voiceOn?' on':'');
+  b.innerHTML=voiceOn?'<b>🔊 Голос включён</b><span>Телефон можно положить на пол и не смотреть</span>':'<b>🔇 Голос выключен</b><span>Нажми, чтобы включить</span>';
+  if(voiceOn)say('Голос включён');else if(window.speechSynthesis)speechSynthesis.cancel();
+}
+async function keepAwake(){try{if(navigator.wakeLock)wake=await navigator.wakeLock.request('screen')}catch(e){}}
+function releaseAwake(){try{if(wake){wake.release();wake=null}}catch(e){}}
+var KEY='flexlog';
+function log(){try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){return {}}}
+function save(d,v){try{var l=log();l[d]=v;localStorage.setItem(KEY,JSON.stringify(l))}catch(e){}}
+function today(){var d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()}
+function buildWeek(){
+  var l=log(),w=document.getElementById('week'),n=['Пн','Вт','Ср','Чт','Пт','Сб','Вс'],now=new Date(),dow=(now.getDay()+6)%7,h='';
+  for(var k=0;k<7;k++){
+    var d=new Date(now);d.setDate(now.getDate()-dow+k);
+    var key=d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();
+    var c='day'+(l[key]=='full'?' done':l[key]=='min'?' min':'')+(k==dow?' today':'');
+    h+='<div class="'+c+'">'+n[k]+'</div>';
+  }
+  w.innerHTML=h;
+}
+function setMode(m){
+  mode=m;
+  document.getElementById('m-full').className='mode'+(m=='full'?' on':'');
+  document.getElementById('m-min').className='mode'+(m=='min'?' on':'');
+  renderList();
+}
+function renderList(){
+  var s=mode=='full'?FULL:MIN,h='';
+  s.forEach(function(e){h+='<div class="item"><span>'+e.n+'</span><small>'+Math.round(e.t/60*10)/10+' мин</small></div>'});
+  document.getElementById('list').innerHTML=h;
+}
+function start(){
+  seq=mode=='full'?FULL:MIN;i=0;keepAwake();
+  document.getElementById('home').style.display='none';
+  document.getElementById('run').style.display='block';
+  show();
+}
+function show(){
+  var e=seq[i];left=e.t;paused=false;
+  document.getElementById('pb').textContent='Пауза';
+  document.getElementById('step').textContent='Упражнение '+(i+1)+' из '+seq.length;
+  document.getElementById('name').textContent=e.n;
+  document.getElementById('how').textContent=e.h;
+  tick(true);
+  say((i==0?'Начинаем. ':'')+e.v);
+  clearInterval(timer);
+  timer=setInterval(function(){if(!paused){left--;tick();if(left>0&&left<=3)beep(660,0.12);if(seq[i].n=='Мост'&&left==30)say('Отдых десять секунд, потом ещё раз');if(seq[i].n=='Мост'&&left==20)say('Теперь снова мост');if(left<=0){beep(880,0.35);next()}}},1000);
+}
+function tick(first){
+  var m=Math.floor(left/60),s=left%60;
+  document.getElementById('time').textContent=m+':'+(s<10?'0':'')+s;
+  document.getElementById('bar').style.width=((seq[i].t-left)/seq[i].t*100)+'%';
+}
+function pauseToggle(){paused=!paused;if(paused&&window.speechSynthesis)speechSynthesis.cancel();document.getElementById('pb').textContent=paused?'Продолжить':'Пауза'}
+function next(){
+  i++;
+  if(i>=seq.length){finish();return}
+  show();
+}
+function finish(){
+  clearInterval(timer);releaseAwake();
+  say(mode=='full'?'Готово. День засчитан.':'Минимум сделан. День засчитан.');
+  var l=log(),t=today();
+  if(!(l[t]=='full'&&mode=='min'))save(t,mode);
+  document.getElementById('run').style.display='none';
+  document.getElementById('fin').style.display='block';
+  document.getElementById('finMsg').textContent=mode=='full'?'Полный комплекс. День засчитан.':'Минимум. День засчитан.';
+}
+buildWeek();renderList();
+</script>
+</body>
+</html>
