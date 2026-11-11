@@ -321,6 +321,37 @@ input::placeholder,textarea::placeholder{color:#c4c1bb;}
   border:2px solid var(--accent);cursor:pointer;border-width:2px;
 }
 
+
+/* ---------- Раскрывающийся блок ---------- */
+.accordion{border:1px solid var(--line);border-radius:14px;margin:0 0 34px;overflow:hidden;}
+.acc-head{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  width:100%;background:none;border:none;cursor:pointer;
+  font-family:var(--font);font-size:.95rem;font-weight:500;color:var(--ink);
+  text-align:left;padding:18px 20px;transition:background .2s;
+}
+.acc-head:hover{background:#f4f2ee;}
+.acc-head .acc-chev{width:16px;height:16px;flex:none;color:var(--ink2);transition:transform .25s;}
+.accordion.open .acc-chev{transform:rotate(180deg);}
+.acc-body{display:none;padding:2px 20px 22px;border-top:1px dotted var(--dot);}
+.accordion.open .acc-body{display:block;}
+.acc-body p{font-size:.92rem;line-height:1.6;margin:14px 0 0;max-width:60ch;}
+.acc-body ol{list-style:none;counter-reset:acc;margin:14px 0 0;max-width:60ch;}
+.acc-body ol li{
+  counter-increment:acc;position:relative;padding-left:34px;margin-bottom:12px;
+  font-size:.92rem;line-height:1.55;
+}
+.acc-body ol li::before{
+  content:counter(acc);position:absolute;left:0;top:0;
+  width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;
+  font-size:.74rem;display:flex;align-items:center;justify-content:center;font-weight:500;
+}
+.acc-note{
+  font-size:.86rem;line-height:1.55;color:var(--ink);background:var(--accent-soft);
+  border-radius:10px;padding:13px 15px;margin:18px 0 0;max-width:60ch;
+}
+.acc-note b{font-weight:500;}
+
 /* ---------- Справка ---------- */
 .doc h3{
   font-size:.78rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;
@@ -463,6 +494,24 @@ body.revealed .wrap{opacity:1;transition:opacity .7s ease;}
 <section id="s-about" class="active">
   <h2>О <span class="grey">дневнике</span></h2>
   <div class="doc">
+    <div class="accordion" id="accDigital">
+      <button type="button" class="acc-head">
+        Электронный дневник — как пользоваться
+        <svg class="acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="acc-body">
+        <p>Этот дневник доступен тебе по ссылке — открывай его в любой момент.</p>
+        <p>Всё, что ты заполняешь, сохраняется прямо в том браузере, в котором ты открыл и ведёшь дневник. Это значит, что твои записи привязаны к этому устройству и браузеру.</p>
+        <p>Чтобы перенести записи на другое устройство — например, с телефона на компьютер или на новый телефон, — сделай так:</p>
+        <ol>
+          <li>На текущем устройстве нажми <b>«Экспорт»</b> — дневник сохранится в файл.</li>
+          <li>Открой дневник по той же ссылке на новом устройстве.</li>
+          <li>Нажми <b>«Импорт»</b> и выбери сохранённый файл — все твои записи вернутся.</li>
+        </ol>
+        <p class="acc-note"><b>Важно:</b> если очистить историю или кэш браузера, удалить сайт из данных или открыть дневник в режиме инкогнито — записи в этом браузере пропадут. Поэтому время от времени делай «Экспорт» и храни файл у себя — это твоя резервная копия.</p>
+      </div>
+    </div>
+
     <h3>Как дневником пользоваться?</h3>
     <p>Ведение дневника не предполагает длинных писем и заполнения всех строк. Это твоё пространство. Если тебе не хочется писать — это твоё право. Хочется — отлично.</p>
     <p class="quote">Дневник — это зеркало твоего внутреннего пространства. И только тебе одному известно, каким он должен быть.</p>
@@ -1204,6 +1253,13 @@ renderSteps();
 renderWheel();
 if(!state.steps.length){/* пустой дневник — оставляем чистым */}
 window.addEventListener("resize",function(){$$("textarea").forEach(autoGrow);});
+
+/* ---------- Аккордеоны ---------- */
+$$(".acc-head").forEach(function(btn){
+  btn.addEventListener("click",function(){
+    btn.parentNode.classList.toggle("open");
+  });
+});
 </script>
 </body>
 </html>
