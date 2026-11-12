@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Гибкость · 7 минут</title>
+<title>Гибкость · 10 минут</title>
 <style>
 :root{--bg:#0f0f12;--card:#1a1a20;--line:#2a2a33;--text:#f2f2f5;--mute:#8a8a96;--acc:#ff7a3d;--ok:#4ade80}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -41,11 +41,11 @@ button{font:inherit;cursor:pointer;border:none;border-radius:14px}
 </head>
 <body>
 <div id="home">
-  <h1>Гибкость · 7 минут</h1>
+  <h1>Гибкость · 10 минут</h1>
   <p class="sub">После пробуждения. Не успел — в любой момент до вечера.</p>
   <div class="week" id="week"></div>
   <div class="modes">
-    <button class="mode on" id="m-full" onclick="setMode('full')"><b>Полный</b><span>~7 мин · 6 упражнений</span></button>
+    <button class="mode on" id="m-full" onclick="setMode('full')"><b>Полный</b><span>~10 мин · 8 шагов</span></button>
     <button class="mode" id="m-min" onclick="setMode('min')"><b>Минимум</b><span>2 мин · плохой день</span></button>
   </div>
   <button class="mode on" id="voiceBtn" onclick="toggleVoice()" style="width:100%;margin-bottom:12px"><b>🔊 Голос включён</b><span>Телефон можно положить на пол и не смотреть</span></button>
@@ -75,7 +75,8 @@ button{font:inherit;cursor:pointer;border:none;border-radius:14px}
 
 <script>
 var FULL=[
- {n:"Кошка-корова",v:"Кошка-корова",t:60,h:"На четвереньках. Выдох — спина дугой вверх, голова вниз. Вдох — прогиб вниз, голова вверх. Медленно, позвонок за позвонком."},
+ {n:"Кошка-корова",v:"Кошка-корова",t:120,h:"На четвереньках. Выдох — спина дугой вверх, голова вниз. Вдох — прогиб вниз, голова вверх. Медленно, позвонок за позвонком."},
+ {n:"Вакуум",v:"Вакуум. Выдох, втяни живот",t:120,h:"На четвереньках или стоя, руки на коленях. Выдохни весь воздух до конца и втяни живот к позвоночнику — пупок тянется к спине. Держи 15 сек без вдоха, потом отпусти, вдохни и отдохни 15 сек. 4 подхода."},
  {n:"Грудные в проёме",v:"Грудные в проёме",t:60,h:"Руки на косяки двери на уровне плеч. Шаг вперёд, корпус чуть вперёд. Растяжение в груди и передних дельтах. Дыши ровно."},
  {n:"Ангел на стене",v:"Ангел на стене",t:60,h:"Спиной к стене: пятки, таз, лопатки, затылок касаются. Руки W → Y, не отрывая от стены. 10 медленных повторений."},
  {n:"Глубокий выпад · левая",v:"Выпад, левая нога",t:60,h:"Передняя нога 90°, задняя на колене. Таз вниз, корпус прямой. Растяжение в паху задней ноги.",sw:1},
@@ -83,7 +84,7 @@ var FULL=[
  {n:"Мост",v:"Мост",t:60,h:"Лёжа, ладони у плеч пальцами к плечам. Толкнись вверх, выпрями руки. 30 сек держишь, 10 сек отдых, ещё 30 сек."},
  {n:"Наклон вперёд стоя",v:"Наклон вперёд",t:60,h:"Ноги вместе или чуть шире плеч. Расслабь шею и голову, вис вниз. С каждым выдохом чуть глубже, без рывков."}
 ];
-var MIN=[FULL[2],FULL[1]];
+var MIN=FULL.filter(function(e){return e.n=='Ангел на стене'||e.n=='Грудные в проёме'}).reverse();
 var mode='full',seq=[],i=0,left=0,paused=false,timer=null;
 
 var voiceOn=true,wake=null;
@@ -166,7 +167,7 @@ function show(){
   tick(true);
   say((i==0?'Начинаем. ':'')+e.v);
   clearInterval(timer);
-  timer=setInterval(function(){if(!paused){left--;tick();if(left>0&&left<=3)beep(660,0.12);if(seq[i].n=='Мост'&&left==30)say('Отдых десять секунд, потом ещё раз');if(seq[i].n=='Мост'&&left==20)say('Теперь снова мост');if(left<=0){beep(880,0.35);next()}}},1000);
+  timer=setInterval(function(){if(!paused){left--;tick();if(left>0&&left<=3)beep(660,0.12);if(seq[i].n=='Вакуум'){var el=seq[i].t-left;if(left>0&&el%30==0)say('Выдох. Втяни живот');if(el%30==15)say('Отпусти. Вдох')}if(seq[i].n=='Мост'&&left==30)say('Отдых десять секунд, потом ещё раз');if(seq[i].n=='Мост'&&left==20)say('Теперь снова мост');if(left<=0){beep(880,0.35);next()}}},1000);
 }
 function tick(first){
   var m=Math.floor(left/60),s=left%60;
